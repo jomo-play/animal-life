@@ -1,0 +1,69 @@
+{
+  "id": "mallard",
+  "name": "マガモ",
+  "sci": "Anas platyrhynchos",
+  "group": "鳥類",
+  "emoji": "🦆",
+  "dataRegion": "イギリス",
+  "intro": "池や川でよく見る、緑の頭のカモ。",
+  "start": "巣立ちの日",
+  "cohort": {
+    "size": 12,
+    "unit": "羽",
+    "label": "同じ巣のきょうだい",
+    "src": [
+      "bto_mallard"
+    ]
+  },
+  "stages": [
+    {
+      "label": "巣立ちから最初の1年",
+      "years": 1,
+      "survival": 0.518,
+      "src": [
+        "bto_mallard"
+      ],
+      "estimated": false,
+      "note": "BTOの足環調査による幼鳥(1年目)の生存率",
+      "surviveText": [
+        "池で、仲間といっしょに水草を食べた。",
+        "空を飛んで、となりの湖まで行けるようになった。",
+        "初めての冬をこえた。"
+      ],
+      "dieText": [
+        "キツネに見つかってしまった。",
+        "池がこおって、えさがとれなかった。",
+        "初めての冬をこえられなかった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 19,
+      "survival": 0.627,
+      "src": [
+        "bto_mallard"
+      ],
+      "estimated": false,
+      "note": "成鳥の年生存率。repeatは記録上の最高年齢20年5か月17日(約20年)から最初の1年を引いた回数",
+      "surviveText": [
+        "草むらに巣をつくり、たくさんのひなを育てた。",
+        "また春をむかえた。"
+      ],
+      "dieText": [
+        "キツネに見つかってしまった。",
+        "寒い冬に力つきた。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bto_mallard",
+      "title": "BTO BirdFacts: Mallard",
+      "publisher": "British Trust for Ornithology",
+      "url": "https://bto.org/learn/about-birds/birdfacts/mallard",
+      "values": "一腹卵数 典型11〜14(平均値の記載なし。cohortは中央付近の12)/幼鳥1年生存率0.518/成鳥年生存率0.627(雌0.575・雄0.679)/最高記録年齢20年5か月17日",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

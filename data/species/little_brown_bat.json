@@ -1,0 +1,78 @@
+{
+  "id": "little_brown_bat",
+  "name": "トビイロホオヒゲコウモリ",
+  "sci": "Myotis lucifugus",
+  "group": "哺乳類",
+  "emoji": "🦇",
+  "dataRegion": "アメリカ・ニューハンプシャー州南部",
+  "intro": "夜の空で虫をつかまえる、手のひらにのるほど小さなコウモリ。",
+  "start": "生まれた夏",
+  "cohort": {
+    "size": 1,
+    "unit": "匹",
+    "label": "いっしょに生まれた子",
+    "src": [
+      "anage_little_brown_bat"
+    ]
+  },
+  "stages": [
+    {
+      "label": "最初の1年",
+      "years": 1,
+      "survival": 0.345,
+      "src": [
+        "frick_2010_myotis"
+      ],
+      "estimated": true,
+      "note": "1年目の生存率は年により0.23〜0.46。幅の中央の値0.345を使用。早く生まれた子ほど生きのびやすい",
+      "surviveText": [
+        "初めて夜空を飛んで、虫をつかまえた。",
+        "洞くつで初めての冬眠をのりこえた。"
+      ],
+      "dieText": [
+        "冬眠のための脂肪が足りなかった。",
+        "フクロウに見つかってしまった。",
+        "初めての冬をこえられなかった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 33,
+      "survival": 0.765,
+      "src": [
+        "frick_2010_myotis",
+        "anage_little_brown_bat"
+      ],
+      "estimated": true,
+      "note": "おとなのメスの年生存率は年により0.63〜0.90。幅の中央の値0.765を使用(雨の多い夏ほど高い)。repeatは野生の最高記録34年から1歳を引いた回数",
+      "surviveText": [
+        "仲間と同じ屋根裏で子を産んだ。",
+        "長い冬眠から目をさました。",
+        "虫の多い夏をすごした。"
+      ],
+      "dieText": [
+        "夏が乾いて虫が少なかった。",
+        "冬眠中に力つきた。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "frick_2010_myotis",
+      "title": "Influence of climate and reproductive timing on demography of little brown myotis Myotis lucifugus",
+      "publisher": "Journal of Animal Ecology (Frick, Reynolds & Kunz 2010) 要旨",
+      "url": "https://doi.org/10.1111/j.1365-2656.2009.01615.x",
+      "values": "【要旨で確認】おとなのメスの年生存率0.63〜0.90/1年目の生存率0.23〜0.46(1993〜2008年の標識再捕獲)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_little_brown_bat",
+      "title": "AnAge entry for Myotis lucifugus",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Myotis_lucifugus",
+      "values": "最高寿命34年(野生)/一度に生まれる子の数1匹",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

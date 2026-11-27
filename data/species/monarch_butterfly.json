@@ -1,0 +1,87 @@
+{
+  "id": "monarch_butterfly",
+  "name": "オオカバマダラ",
+  "sci": "Danaus plexippus",
+  "group": "昆虫",
+  "emoji": "🦋",
+  "dataRegion": "北アメリカ(卵〜さなぎ前:アメリカ・アイオワ州とカナダ・オンタリオ州/さなぎ:アメリカ・カリフォルニア州)",
+  "intro": "トウワタの葉で育ち、北アメリカを大移動するチョウ。",
+  "start": "卵",
+  "cohort": {
+    "size": 200,
+    "unit": "個",
+    "label": "1匹のお母さんが産む卵",
+    "src": [
+      "monarchwatch_cycle"
+    ]
+  },
+  "stages": [
+    {
+      "label": "卵〜幼虫(さなぎになるまで)",
+      "years": 0.042,
+      "survival": 0.014,
+      "src": [
+        "grant2020_monarch",
+        "monarchwatch_cycle"
+      ],
+      "estimated": false,
+      "note": "18か所の野外調査による、産卵からさなぎになるまでの平均生存率0.014(95%信頼区間0.004〜0.024)。期間は卵3〜4日+幼虫10〜14日の中央値(約15.5日)",
+      "surviveText": [
+        "トウワタの葉をたくさん食べて大きくなった。",
+        "クモやアリに見つからずにすんだ。",
+        "5回目の脱皮をおえ、さなぎになる場所を見つけた。"
+      ],
+      "dieText": [
+        "小さな虫に食べられてしまった。",
+        "葉っぱから落ちてしまった。",
+        "暑い日に力つきてしまった。"
+      ]
+    },
+    {
+      "label": "さなぎ",
+      "years": 0.033,
+      "survival": 0.394,
+      "src": [
+        "smith1986_monarch_pupae",
+        "monarchwatch_cycle"
+      ],
+      "estimated": false,
+      "note": "カリフォルニア州の道ばたで印をつけたさなぎ392個のうち39.4%が羽化。期間は10〜14日の中央値(12日)。さなぎを終えると成虫になって飛び立つところでゲーム終了",
+      "surviveText": [
+        "羽化して、オレンジ色のチョウになって飛び立った。",
+        "じっと動かずに、見つからずにすんだ。"
+      ],
+      "dieText": [
+        "さなぎのまま、羽化できなかった。",
+        "鳥に見つかってしまった。",
+        "さなぎが草ごとなくなってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "grant2020_monarch",
+      "title": "Estimating arthropod survival probability from field counts: a case study with monarch butterflies (Grant et al. 2020, Ecosphere 11(4): e03082)",
+      "publisher": "Ecological Society of America / Wiley",
+      "url": "https://doi.org/10.1002/ecs2.3082",
+      "values": "【要旨で確認】卵からさなぎになるまでの平均生存率0.014(95%CI 0.004〜0.024)/地点ごとの範囲0.002〜0.058/調査地:アイオワ州・オンタリオ州の18地点(要旨をCrossref経由で確認)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "smith1986_monarch_pupae",
+      "title": "Placement and fate of monarch butterfly pupae in northern California (Journal of the Lepidopterists' Society 40(1): 67, 1986)",
+      "publisher": "The Lepidopterists' Society",
+      "url": "https://images.peabody.yale.edu/lepsoc/jls/1980s/1986/1986-40(1)67-Smith.pdf",
+      "values": "さなぎ392個のうち羽化39.4%・死亡35.1%・行方不明25.5%(カリフォルニア州デービス近郊、1966年)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "monarchwatch_cycle",
+      "title": "Monarch Life Cycle",
+      "publisher": "Monarch Watch (University of Kansas)",
+      "url": "https://monarchwatch.org/biology/cycle1.htm",
+      "values": "卵3〜4日/幼虫10〜14日/さなぎ10〜14日/夏の世代の成虫は2〜5週間生きる/渡りの世代は8〜9か月/1匹が産む卵は平均でおそらく100〜300個",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

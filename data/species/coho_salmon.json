@@ -1,0 +1,129 @@
+{
+  "id": "coho_salmon",
+  "name": "ギンザケ",
+  "sci": "Oncorhynchus kisutch",
+  "group": "魚類",
+  "emoji": "🐟",
+  "dataRegion": "カナダ・ブリティッシュコロンビア州(カーネーション川)",
+  "intro": "小さな川で生まれ、海で育って、一度だけ卵を産みに帰ってくるサケ。",
+  "start": "卵",
+  "cohort": {
+    "size": 2500,
+    "unit": "個",
+    "label": "同じお母さんの卵",
+    "src": [
+      "dfo_coho1990"
+    ]
+  },
+  "stages": [
+    {
+      "label": "砂利の中(卵から稚魚が出てくるまで)",
+      "years": 0.4,
+      "survival": 0.15,
+      "src": [
+        "dfo_coho1990"
+      ],
+      "estimated": false,
+      "note": "卵が泳げる稚魚になって出てくる割合約15%。秋〜冬に産まれ3〜5月に出てくるため期間は約0.4年(おおよそ)",
+      "surviveText": [
+        "砂利の中で卵がかえった。",
+        "春になって川の岸辺に泳ぎ出た。"
+      ],
+      "dieText": [
+        "砂の泥で息ができなくなってしまった。",
+        "大水で卵が流されてしまった。"
+      ]
+    },
+    {
+      "label": "最初の夏",
+      "years": 0.5,
+      "survival": 0.5,
+      "src": [
+        "dfo_coho1990"
+      ],
+      "estimated": false,
+      "note": "出てきた稚魚が最初の夏をこす割合は典型的に50%。期間はおおよそ",
+      "surviveText": [
+        "夏のあいだに体が2倍の長さになった。",
+        "岸辺で虫をたくさん食べた。"
+      ],
+      "dieText": [
+        "川の水が少なくなってしまった。",
+        "カワセミに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "川での冬",
+      "years": 0.5,
+      "survival": 0.3,
+      "src": [
+        "dfo_coho1990"
+      ],
+      "estimated": false,
+      "note": "冬をこす割合は典型的に30%。期間はおおよそ",
+      "surviveText": [
+        "流れのゆるい池にかくれて冬をこした。",
+        "体が銀色になり、海へ向かった。"
+      ],
+      "dieText": [
+        "冬の大水で流されてしまった。",
+        "寒さと空腹で力つきた。"
+      ]
+    },
+    {
+      "label": "海の暮らし",
+      "years": 1.5,
+      "survival": 0.1,
+      "src": [
+        "dfo_coho1990",
+        "noaa_salmon_cycle"
+      ],
+      "estimated": false,
+      "note": "スモルトが海で2度目の夏まで生きる割合は5〜15%、中央の10%を使用(図の値も10%)。多くは海で2年目の秋〜冬に帰る",
+      "surviveText": [
+        "海で小魚を食べて大きくなった。",
+        "仲間と一緒にふるさとの川をめざした。"
+      ],
+      "dieText": [
+        "大きな魚に食べられてしまった。",
+        "アザラシに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "漁の季節をぬけて川をのぼる",
+      "years": 0.2,
+      "survival": 0.36,
+      "src": [
+        "dfo_coho1990"
+      ],
+      "estimated": true,
+      "note": "帰ってきたおとなの64%が漁でとられる(図: 5.6匹→産卵2匹)。生き残る割合 = 1 − 0.64 = 0.36(計算値)。ギンザケは産卵後に一生を終えるため、ここで終わる",
+      "surviveText": [
+        "生まれた川にたどりつき、卵を産んで一生をやりとげた。",
+        "流れをのぼりきって、次の命に卵をたくした。"
+      ],
+      "dieText": [
+        "漁の網にかかってしまった。",
+        "釣り人につり上げられてしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "dfo_coho1990",
+      "title": "Strait of Georgia Coho Salmon: Resource Status and Management Planning Process (1990)",
+      "publisher": "Fisheries and Oceans Canada",
+      "url": "https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/243271.pdf",
+      "values": "1匹のメスが平均約2,500個の卵/卵→稚魚約15%/最初の夏50%/冬30%/スモルト→海で2度目の夏まで5〜15%(図では10%)/漁による死亡64%(図: 卵2,500→稚魚375→秋の稚魚188→スモルト56→漁の前のおとな5.6→産卵2、カーネーション川のデータ)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "noaa_salmon_cycle",
+      "title": "Salmon Life Cycle and Seasonal Fishery Planning",
+      "publisher": "NOAA Fisheries",
+      "url": "https://www.fisheries.noaa.gov/west-coast/sustainable-fisheries/salmon-life-cycle-and-seasonal-fishery-planning",
+      "values": "ギンザケの寿命はふつう3〜4年",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

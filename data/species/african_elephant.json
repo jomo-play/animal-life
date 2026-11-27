@@ -1,0 +1,140 @@
+{
+  "id": "african_elephant",
+  "name": "アフリカゾウ",
+  "sci": "Loxodonta africana",
+  "group": "哺乳類",
+  "emoji": "🐘",
+  "dataRegion": "ケニア・アンボセリ国立公園(メス)",
+  "intro": "陸でいちばん大きな動物。お母さんたちの家族で暮らす。",
+  "start": "生まれた日",
+  "cohort": {
+    "size": 1,
+    "unit": "頭",
+    "label": "いっしょに生まれた子",
+    "src": [
+      "anage_african_elephant"
+    ]
+  },
+  "stages": [
+    {
+      "label": "子ども(0〜9歳)",
+      "years": 1,
+      "repeat": 9,
+      "survival": 0.9774,
+      "src": [
+        "lee2016_amboseli"
+      ],
+      "estimated": true,
+      "note": "40歳までの生存割合40%を1年あたりに換算(0.40の40乗根=0.9774)。年齢ごとの値は資料にないため0〜40歳で同じ値",
+      "surviveText": [
+        "お母さんのおっぱいを飲んで、すくすく育った。",
+        "家族のおばさんたちにも守られた。"
+      ],
+      "dieText": [
+        "乾季をこえられなかった。",
+        "病気で動けなくなった。"
+      ]
+    },
+    {
+      "label": "おとな(9〜40歳)",
+      "years": 1,
+      "repeat": 31,
+      "survival": 0.9774,
+      "src": [
+        "lee2016_amboseli"
+      ],
+      "estimated": true,
+      "note": "0〜40歳と同じ値(0.40の40乗根)",
+      "surviveText": [
+        "家族といっしょに遠くの水場まで歩いた。",
+        "また雨の季節をむかえた。",
+        "子どもを育てた。"
+      ],
+      "dieText": [
+        "年をとって、静かに眠りについた。",
+        "日照りの年をこえられなかった。"
+      ]
+    },
+    {
+      "label": "年長のおとな(40〜50歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.933,
+      "src": [
+        "lee2016_amboseli"
+      ],
+      "estimated": true,
+      "note": "40歳40%→50歳20%なので10年で0.5、1年あたり0.5の10乗根=0.9330",
+      "surviveText": [
+        "群れの先頭に立ち、水場への道を案内した。",
+        "孫たちの世話を手伝った。"
+      ],
+      "dieText": [
+        "乾季の終わりに、静かに力つきた。",
+        "病気で動けなくなった。"
+      ]
+    },
+    {
+      "label": "長老(50〜60歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.933,
+      "src": [
+        "lee2016_amboseli"
+      ],
+      "estimated": true,
+      "note": "50歳20%→60歳代10%なので10年で0.5、1年あたり0.9330",
+      "surviveText": [
+        "長い経験で、干ばつの年も水場を見つけた。",
+        "若いゾウたちに頼られた。"
+      ],
+      "dieText": [
+        "歯がすり減り、食べられなくなった。",
+        "乾季をこえられなかった。"
+      ]
+    },
+    {
+      "label": "大長老(60〜65歳)",
+      "years": 1,
+      "repeat": 5,
+      "survival": 0.8706,
+      "src": [
+        "lee2016_amboseli"
+      ],
+      "estimated": true,
+      "note": "60歳代10%→65歳までに95%が死亡(残り5%)なので5年で0.5、1年あたり0.5の5乗根=0.8706",
+      "surviveText": [
+        "また雨の季節をむかえた。",
+        "群れのみんなに見守られて過ごした。"
+      ],
+      "dieText": [
+        "年をとり、静かに一生を終えた。",
+        "歯がすり減り、食べられなくなった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "lee2016_amboseli",
+      "title": "The reproductive advantages of a long life: longevity and senescence in wild female African elephants (Lee et al. 2016, CC BY 4.0)",
+      "publisher": "Behavioral Ecology and Sociobiology 70:337-345",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4748003/",
+      "values": "アンボセリの野生のメス(自然死のみ、1255頭): 生まれたメスのうち40歳まで生きるのは40%、50歳まで20%、60歳代まで10%/95%が65歳までに死亡/9歳まで生きたメスの平均余命32年",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_african_elephant",
+      "title": "AnAge entry for Loxodonta africana",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Loxodonta_africana",
+      "values": "一度に生まれる子の数1頭(最高寿命65年は飼育下の記録のため使っていない)",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "maxAgeBasis": "仲間の95%が一生を終える年齢",
+  "endText": "仲間の95%が一生を終える65歳をこえて生きた。大長老。",
+  "caveats": [
+    "病気・干ばつなどの自然死だけの値(密猟など人による死は含まない)。",
+    "前の版で使ったタンザニア・タランギレの値(おとなの年死亡率1%)は、密猟から回復中の若い群れの平均で、年をとってからの死亡の増加を含まないため、65歳まで約45%が生きる計算になり不自然だった。年齢ごとの生存割合が分かるアンボセリの資料に差し替えた。"
+  ]
+}

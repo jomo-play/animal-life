@@ -1,0 +1,144 @@
+{
+  "id": "western_toad",
+  "name": "セイブヒキガエル",
+  "sci": "Anaxyrus boreas",
+  "group": "両生類",
+  "emoji": "🐸",
+  "dataRegion": "北アメリカ西部(既存研究の値をまとめたもの/期間はアメリカ・モンタナ州など)",
+  "intro": "北アメリカ西部の山や草原にすむ、いぼいぼのヒキガエル。",
+  "start": "卵",
+  "cohort": {
+    "size": 3532,
+    "unit": "個",
+    "label": "1回に産まれる卵",
+    "src": [
+      "biek2002"
+    ]
+  },
+  "stages": [
+    {
+      "label": "卵",
+      "years": 0.014,
+      "survival": 0.78,
+      "src": [
+        "biek2002",
+        "mt_fieldguide_western_toad"
+      ],
+      "estimated": false,
+      "note": "胚(卵)の生存率0.78。期間はモンタナ州でのふ化までの日数(約5日)",
+      "surviveText": [
+        "小さなオタマジャクシがふ化した。",
+        "ひもみたいな卵の中で無事に育った。"
+      ],
+      "dieText": [
+        "卵にカビが生えてしまった。",
+        "水がへって卵がかわいてしまった。"
+      ]
+    },
+    {
+      "label": "オタマジャクシ",
+      "years": 0.158,
+      "survival": 0.47,
+      "src": [
+        "biek2002",
+        "mt_fieldguide_western_toad"
+      ],
+      "estimated": false,
+      "note": "幼生の生存率0.47。期間はふ化から変態まで40〜75日の中央値(約58日)",
+      "surviveText": [
+        "足が生えて、小さなヒキガエルになった。",
+        "仲間といっしょに浅瀬で育った。"
+      ],
+      "dieText": [
+        "ヤゴに見つかってしまった。",
+        "水たまりが干上がってしまった。"
+      ]
+    },
+    {
+      "label": "子ガエル(はじめての冬まで)",
+      "years": 0.828,
+      "survival": 0.08,
+      "src": [
+        "biek2002"
+      ],
+      "estimated": true,
+      "note": "変態直後の生存率0.08。論文では卵・オタマジャクシ・子ガエルで最初の1年のため、期間は1年から前の2段階(0.014+0.158)を引いた残り",
+      "surviveText": [
+        "土にもぐって、はじめての冬をこえた。",
+        "草むらで小さな虫を食べて育った。"
+      ],
+      "dieText": [
+        "暑い日にかわいてしまった。",
+        "鳥に見つかってしまった。",
+        "ヘビに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "わかもの",
+      "years": 1,
+      "repeat": 4,
+      "survival": 0.26,
+      "src": [
+        "biek2002",
+        "mt_fieldguide_western_toad"
+      ],
+      "estimated": false,
+      "note": "幼体の年生存率0.26。成熟は4〜7歳(モンタナではオス4歳・メス6歳)の幅から5歳とし、4回くりかえす",
+      "surviveText": [
+        "また1年、元気にすごした。",
+        "土の中で冬ごもりをした。"
+      ],
+      "dieText": [
+        "寒い冬をこえられなかった。",
+        "タカに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 6,
+      "survival": 0.78,
+      "src": [
+        "biek2002",
+        "anage_anaxyrus_boreas"
+      ],
+      "estimated": false,
+      "note": "おとなの年生存率0.78。repeatはAnAgeの最高寿命11.5年(飼育下)を11年とし、成熟の5年を引いた回数",
+      "surviveText": [
+        "春の池で卵を産んだ。",
+        "また春をむかえた。"
+      ],
+      "dieText": [
+        "病気になってしまった。",
+        "冬ごもり中に力つきてしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "biek2002",
+      "title": "What Is Missing in Amphibian Decline Research: Insights from Ecological Sensitivity Analysis (Biek, Funk, Maxell & Mills 2002, Conservation Biology 16(3): 728-734) Table 1",
+      "publisher": "University of Montana (Mills Lab)",
+      "url": "https://www.umt.edu/research/millslab/files/2015/01/biekwhat.pdf",
+      "values": "セイブヒキガエル:胚0.78/幼生0.47/変態直後0.08/幼体の年生存率0.26/おとなの年生存率0.78/一腹卵数3532/成熟4〜7年。胚・幼生・変態直後の3つで最初の1年(いくつかは近い仲間の値を代用)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "mt_fieldguide_western_toad",
+      "title": "Montana Field Guide: Western Toad (Anaxyrus boreas)",
+      "publisher": "Montana Natural Heritage Program / Montana Fish, Wildlife & Parks",
+      "url": "https://fieldguide.mt.gov/speciesDetail.aspx?elcode=AAABB01030",
+      "values": "卵は3〜12日でふ化(モンタナでは約5日)/オタマジャクシは40〜75日で一斉に変態/繁殖するオスは最低4歳、メスは6歳/1回の卵は1,000〜18,000個以上",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_anaxyrus_boreas",
+      "title": "AnAge entry for Anaxyrus boreas",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Anaxyrus_boreas",
+      "values": "最高寿命11.5年(飼育下)/成熟1,095日",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "maxAgeBasis": "飼育下の記録"
+}

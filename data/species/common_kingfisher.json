@@ -1,0 +1,69 @@
+{
+  "id": "common_kingfisher",
+  "name": "カワセミ",
+  "sci": "Alcedo atthis",
+  "group": "鳥類",
+  "emoji": "🐦",
+  "dataRegion": "イギリス",
+  "intro": "川で魚をとる、青くかがやく小さな鳥。",
+  "start": "巣立ちの日",
+  "cohort": {
+    "size": 6,
+    "unit": "羽",
+    "label": "同じ巣のきょうだい",
+    "src": [
+      "bto_kingfisher"
+    ]
+  },
+  "stages": [
+    {
+      "label": "巣立ちから最初の1年",
+      "years": 1,
+      "survival": 0.215,
+      "src": [
+        "bto_kingfisher"
+      ],
+      "estimated": false,
+      "note": "BTOの足環調査による幼鳥(1年目)の生存率",
+      "surviveText": [
+        "水に飛びこんで、初めて魚をつかまえた。",
+        "自分の川のなわばりを見つけた。",
+        "初めての冬をこえた。"
+      ],
+      "dieText": [
+        "川がこおって、魚がとれなくなった。",
+        "なわばりを見つけられず、力つきた。",
+        "大雨で川がにごり、魚が見えなかった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 4,
+      "survival": 0.28,
+      "src": [
+        "bto_kingfisher"
+      ],
+      "estimated": false,
+      "note": "成鳥の年生存率。repeatは記録上の最高年齢4年6か月29日(約5年)から最初の1年を引いた回数",
+      "surviveText": [
+        "川の土手に穴をほって、ひなを育てた。",
+        "また春をむかえた。"
+      ],
+      "dieText": [
+        "川がこおる寒い冬をこえられなかった。",
+        "大水で巣が流されてしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bto_kingfisher",
+      "title": "BTO BirdFacts: Kingfisher",
+      "publisher": "British Trust for Ornithology",
+      "url": "https://bto.org/learn/about-birds/birdfacts/kingfisher",
+      "values": "一腹卵数 平均5.51(典型5〜7)/幼鳥1年生存率0.215/成鳥年生存率0.28/最高記録年齢4年6か月29日",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

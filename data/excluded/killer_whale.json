@@ -1,0 +1,140 @@
+{
+  "id": "killer_whale",
+  "name": "シャチ",
+  "sci": "Orcinus orca",
+  "group": "哺乳類",
+  "emoji": "🐋",
+  "dataRegion": "カナダ・ブリティッシュコロンビア州北部の沿岸(北部定住型シャチ)",
+  "intro": "おばあちゃんが群れを率いる、海のかしこいハンター。",
+  "start": "生後6か月ごろ(初めて群れで確認された日)",
+  "cohort": { "size": 1, "unit": "頭", "label": "いっしょに生まれた子", "src": ["anage_killer_whale"] },
+  "stages": [
+    {
+      "label": "赤ちゃん(0.5〜1.5歳)",
+      "years": 1,
+      "survival": 0.9137,
+      "src": ["dfo_olesiuk_2005"],
+      "estimated": false,
+      "note": "1996〜2004年の0.5歳の年生存率。生後6か月までの死亡は推定されていない",
+      "surviveText": ["お母さんのすぐ横を泳いだ。", "群れの声をまねして覚えた。"],
+      "dieText": ["病気で弱ってしまった。", "群れについていけなかった。"]
+    },
+    {
+      "label": "小さな子ども(1.5〜3.5歳)",
+      "years": 1,
+      "repeat": 2,
+      "survival": 0.9841,
+      "src": ["dfo_olesiuk_2005"],
+      "estimated": false,
+      "note": "1996〜2004年の1.5〜2.5歳の年生存率",
+      "surviveText": ["サケの追いかけ方を見て覚えた。", "きょうだいと波で遊んだ。"],
+      "dieText": ["サケが少ない年で、栄養が足りなかった。", "病気で動けなくなった。"]
+    },
+    {
+      "label": "子ども(3.5〜6.5歳)",
+      "years": 1,
+      "repeat": 3,
+      "survival": 0.9323,
+      "src": ["dfo_olesiuk_2005"],
+      "estimated": false,
+      "note": "1996〜2004年の3.5〜5.5歳の年生存率(弟や妹が生まれた年の前後に死亡が多かった)",
+      "surviveText": ["弟か妹が生まれた。", "自分でサケをつかまえた。"],
+      "dieText": ["お母さんの手がはなれて、えさが足りなかった。", "冬の海で力つきた。"]
+    },
+    {
+      "label": "少年・少女(6.5〜10.5歳)",
+      "years": 1,
+      "repeat": 4,
+      "survival": 0.988,
+      "src": ["dfo_olesiuk_2005"],
+      "estimated": false,
+      "note": "1996〜2004年の6.5〜9.5歳の年生存率",
+      "surviveText": ["群れといっしょに遠くまで旅をした。", "大きなサケを分けあった。"],
+      "dieText": ["病気で弱ってしまった。", "えさの少ない年をこえられなかった。"]
+    },
+    {
+      "label": "若者(10.5〜15.5歳)",
+      "years": 1,
+      "repeat": 5,
+      "survival": 0.9771,
+      "src": ["dfo_olesiuk_2005"],
+      "estimated": false,
+      "note": "1996〜2004年の10.5〜14.5歳の年生存率",
+      "surviveText": ["体がぐんと大きくなった。", "ほかの群れとあいさつを交わした。"],
+      "dieText": ["サケが少ない年で、栄養が足りなかった。", "病気で動けなくなった。"]
+    },
+    {
+      "label": "若いおとな(15.5〜20.5歳)",
+      "years": 1,
+      "repeat": 5,
+      "survival": 0.9847,
+      "src": ["dfo_olesiuk_2005"],
+      "estimated": false,
+      "note": "1996〜2004年のおとなのメス15.5〜19.5歳の年生存率(オスは別の値)",
+      "surviveText": ["はじめて子どもを産んだ。", "群れの仲間と狩りをした。"],
+      "dieText": ["出産のあと、弱ってしまった。", "病気で動けなくなった。"]
+    },
+    {
+      "label": "おとな(20.5〜30.5歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.975,
+      "src": ["dfo_olesiuk_2005"],
+      "estimated": false,
+      "note": "1996〜2004年のおとなのメス20.5〜29.5歳の年生存率",
+      "surviveText": ["子どもに狩りを教えた。", "また夏のサケの季節が来た。"],
+      "dieText": ["えさの少ない年をこえられなかった。", "病気で弱ってしまった。"]
+    },
+    {
+      "label": "おとな(30.5〜40.5歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.9947,
+      "src": ["dfo_olesiuk_2005"],
+      "estimated": false,
+      "note": "1996〜2004年のおとなのメス30.5〜39.5歳の年生存率",
+      "surviveText": ["孫が生まれた。", "群れのみんなと長い旅をした。"],
+      "dieText": ["病気で弱ってしまった。", "冬の海で力つきた。"]
+    },
+    {
+      "label": "おばあちゃん(40.5〜50.5歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.942,
+      "src": ["dfo_olesiuk_2005"],
+      "estimated": false,
+      "note": "1996〜2004年のおとなのメス40.5〜49.5歳の年生存率",
+      "surviveText": ["サケのいる場所へ群れを案内した。", "孫たちの世話をした。"],
+      "dieText": ["年をとって、静かに眠りについた。", "えさの少ない年をこえられなかった。"]
+    },
+    {
+      "label": "長老(50.5歳〜)",
+      "years": 1,
+      "repeat": 30,
+      "survival": 0.9322,
+      "src": ["dfo_olesiuk_2005"],
+      "estimated": false,
+      "note": "1996〜2004年のおとなのメス50.5歳以上の年生存率。repeatは同資料のメスの最高寿命およそ80年から50歳を引いた回数",
+      "surviveText": ["群れの先頭を泳いだ。", "みんなに昔のえさ場を教えた。"],
+      "dieText": ["年をとって、静かに眠りについた。", "病気で弱ってしまった。"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "dfo_olesiuk_2005",
+      "title": "Life History and Population Dynamics of Northern Resident Killer Whales (Orcinus orca) in British Columbia (Research Document 2005/045)",
+      "publisher": "Fisheries and Oceans Canada, Canadian Science Advisory Secretariat (Olesiuk, Ellis & Ford 2005)",
+      "url": "https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/324059.pdf",
+      "values": "1996〜2004年の年生存率: 0.5歳0.9137/1.5〜2.5歳0.9841/3.5〜5.5歳0.9323/6.5〜9.5歳0.9880/10.5〜14.5歳0.9771/メス15.5〜19.5歳0.9847/20.5〜29.5歳0.9750/30.5〜39.5歳0.9947/40.5〜49.5歳0.9420/50.5歳以上0.9322。メスの最高寿命はおよそ80年。生後6か月までの死亡は推定対象外",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_killer_whale",
+      "title": "AnAge entry for Orcinus orca",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Orcinus_orca",
+      "values": "一度に生まれる子の数1頭/野生での最高寿命およそ90年(参考)",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

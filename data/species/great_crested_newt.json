@@ -1,0 +1,116 @@
+{
+  "id": "great_crested_newt",
+  "name": "クシイモリ",
+  "sci": "Triturus cristatus",
+  "group": "両生類",
+  "emoji": "🦎",
+  "dataRegion": "ヨーロッパ(スウェーデンの研究がまとめた文献値)",
+  "intro": "せなかにギザギザのとさかがある、ヨーロッパの大きなイモリ。",
+  "start": "卵",
+  "cohort": {
+    "size": 204,
+    "unit": "個",
+    "label": "1匹のお母さんが産む卵",
+    "src": [
+      "karlsson2007_gcn"
+    ]
+  },
+  "stages": [
+    {
+      "label": "卵",
+      "years": 0.044,
+      "survival": 0.5,
+      "src": [
+        "karlsson2007_gcn",
+        "anage_triturus_cristatus"
+      ],
+      "estimated": true,
+      "note": "卵の約50%が生まれつきの染色体のしくみでふ化前に死ぬ → 生存率=1−0.50=0.50。期間はふ化まで16日",
+      "surviveText": [
+        "小さな幼生がふ化した。",
+        "水草の葉にくるまれて、無事に育った。"
+      ],
+      "dieText": [
+        "卵がうまく育たなかった。",
+        "卵のまま、ふ化できなかった。"
+      ]
+    },
+    {
+      "label": "幼生(水の中の子ども)",
+      "years": 0.247,
+      "survival": 0.05,
+      "src": [
+        "karlsson2007_gcn",
+        "anage_triturus_cristatus"
+      ],
+      "estimated": true,
+      "note": "卵・幼生の死亡率は約95%とされる → 生存率=1−0.95=0.05(上の50%とは別に計算されている)。期間は変態まで90日",
+      "surviveText": [
+        "えらがなくなり、陸に上がった。",
+        "水草のかげにかくれて、たすかった。"
+      ],
+      "dieText": [
+        "魚に食べられてしまった。",
+        "ヤゴに見つかってしまった。",
+        "池が干上がってしまった。"
+      ]
+    },
+    {
+      "label": "わかもの",
+      "years": 1,
+      "repeat": 3,
+      "survival": 0.55,
+      "src": [
+        "karlsson2007_gcn"
+      ],
+      "estimated": false,
+      "note": "幼体の年生存率は0.22・0.59・0.85の3つの研究の平均0.55。成熟は平均3歳なので3回くりかえす(論文でも変態から次の春までにこの年生存率を使用)",
+      "surviveText": [
+        "石の下で冬をこした。",
+        "また1年、元気にすごした。"
+      ],
+      "dieText": [
+        "寒い冬をこえられなかった。",
+        "鳥に見つかってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 13,
+      "survival": 0.66,
+      "src": [
+        "karlsson2007_gcn",
+        "anage_triturus_cristatus"
+      ],
+      "estimated": false,
+      "note": "おとなの年生存率は研究により0.49〜0.78、平均0.66。repeatは野生での最高16年から3年を引いた回数",
+      "surviveText": [
+        "春の池で卵を産んだ。",
+        "また春をむかえた。"
+      ],
+      "dieText": [
+        "サギに見つかってしまった。",
+        "冬ごもり中に力つきてしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "karlsson2007_gcn",
+      "title": "Estimating viability and sensitivity of the great crested newt Triturus cristatus at a regional scale (Karlsson, Betzholtz & Malmgren 2007, Web Ecology 7: 63-76)",
+      "publisher": "Copernicus Publications / European Ecological Federation",
+      "url": "https://we.copernicus.org/articles/7/63/2007/we-7-63-2007.pdf",
+      "values": "おとなの年生存率0.49〜0.78(平均0.66)/幼体の年生存率0.22・0.59・0.85(平均0.55)/成熟2〜5歳(平均3歳)/一腹卵数189〜220(平均204)/卵の約50%が染色体の異常でふ化前に死ぬ/卵・幼生の死亡率約95%",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_triturus_cristatus",
+      "title": "AnAge entry for Triturus cristatus",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Triturus_cristatus",
+      "values": "ふ化まで16日/変態まで90日/野生では最高16年(飼育下28年)/一腹卵数225",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

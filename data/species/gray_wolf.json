@@ -1,0 +1,86 @@
+{
+  "id": "gray_wolf",
+  "name": "ハイイロオオカミ",
+  "sci": "Canis lupus",
+  "group": "哺乳類",
+  "emoji": "🐺",
+  "dataRegion": "アメリカ・ロッキー山脈北部(イエローストーン周辺)",
+  "intro": "家族の群れでくらし、力を合わせて狩りをする。",
+  "start": "子オオカミとして群れで数えられた日(生まれた年の夏〜秋)",
+  "cohort": {
+    "size": 6,
+    "unit": "頭",
+    "label": "同じ巣穴のきょうだい",
+    "src": [
+      "anage_gray_wolf"
+    ]
+  },
+  "stages": [
+    {
+      "label": "子オオカミ(年末まで)",
+      "years": 0.3,
+      "survival": 0.79,
+      "src": [
+        "nps_yellowstone_wolf_2023"
+      ],
+      "estimated": false,
+      "note": "2023年、数えられた子58頭のうち46頭(79%)が年末まで生きのびた。子の数は秋にランデブー地点に移ってから数えるため、それより前の死亡は含まれない。yearsは秋から年末までのおおよその長さ",
+      "surviveText": [
+        "おとなが運んでくれた肉を食べて大きくなった。",
+        "きょうだいとじゃれあって遊んだ。"
+      ],
+      "dieText": [
+        "病気で動けなくなった。",
+        "初めての寒さに力つきた。"
+      ]
+    },
+    {
+      "label": "若者・おとな",
+      "years": 1,
+      "repeat": 13,
+      "survival": 0.75,
+      "src": [
+        "smith_2010_wolf",
+        "anage_gray_wolf"
+      ],
+      "estimated": false,
+      "note": "首輪をつけた711頭の調査によるロッキー山脈北部の年生存率0.750(1982〜2004年。子と1歳はやや死にやすいと報告)。repeatは野生の最高記録13.7年から約0.7歳を引いて丸めた回数",
+      "surviveText": [
+        "群れでエルクを追いかけた。",
+        "雪の冬をこえた。",
+        "自分のなわばりを持った。"
+      ],
+      "dieText": [
+        "狩りの最中にけがをしてしまった。",
+        "ほかの群れとのあらそいに負けた。",
+        "人の住む場所に近づきすぎた。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps_yellowstone_wolf_2023",
+      "title": "Yellowstone Wolf Project Annual Report 2023",
+      "publisher": "U.S. National Park Service",
+      "url": "https://www.nps.gov/yell/learn/nature/upload/2023-Wolf-Report-final_web.pdf",
+      "values": "数えられた子58頭のうち46頭(79%)が年末まで生存(2023年)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "smith_2010_wolf",
+      "title": "Survival of Colonizing Wolves in the Northern Rocky Mountains of the United States, 1982–2004",
+      "publisher": "Journal of Wildlife Management 74(4) (Smith et al. 2010) 要旨",
+      "url": "https://doi.org/10.2193/2008-584",
+      "values": "【要旨で確認】年生存率0.750(95%信頼区間0.728〜0.772)/711頭に首輪、死亡363件",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_gray_wolf",
+      "title": "AnAge entry for Canis lupus",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Canis_lupus",
+      "values": "野生での最高記録13.7年(飼育下20.6年)/一腹の子の数6頭",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

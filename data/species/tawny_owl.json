@@ -1,0 +1,70 @@
+{
+  "id": "tawny_owl",
+  "name": "モリフクロウ",
+  "sci": "Strix aluco",
+  "group": "鳥類",
+  "emoji": "🦉",
+  "dataRegion": "イギリス",
+  "intro": "森で「ホーホー」と鳴く、茶色のフクロウ。",
+  "start": "巣立ちの日",
+  "cohort": {
+    "size": 3,
+    "unit": "羽",
+    "label": "同じ巣のきょうだい",
+    "src": [
+      "bto_tawny_owl"
+    ]
+  },
+  "stages": [
+    {
+      "label": "巣立ちから最初の1年",
+      "years": 1,
+      "survival": 0.301,
+      "src": [
+        "bto_tawny_owl"
+      ],
+      "estimated": false,
+      "note": "BTOの足環調査による幼鳥(1年目)の生存率",
+      "surviveText": [
+        "空いている森を見つけて、自分のなわばりにした。",
+        "夜の森でネズミをとれるようになった。",
+        "初めての冬をこえた。"
+      ],
+      "dieText": [
+        "なわばりを見つけられず、力つきた。",
+        "えものがとれず、弱ってしまった。",
+        "初めての冬をこえられなかった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 22,
+      "survival": 0.738,
+      "src": [
+        "bto_tawny_owl"
+      ],
+      "estimated": false,
+      "note": "成鳥の年生存率。repeatは記録上の最高年齢23年5か月27日(約23年)から最初の1年を引いた回数",
+      "surviveText": [
+        "木のうろで、ひなを育てた。",
+        "夜の森で、つがいと鳴きかわした。",
+        "また春をむかえた。"
+      ],
+      "dieText": [
+        "寒い冬に力つきた。",
+        "夜の道路で車にぶつかってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bto_tawny_owl",
+      "title": "BTO BirdFacts: Tawny Owl",
+      "publisher": "British Trust for Ornithology",
+      "url": "https://bto.org/learn/about-birds/birdfacts/tawny-owl",
+      "values": "一腹卵数 平均2.56(典型2〜3)/幼鳥1年生存率0.301/成鳥年生存率0.738/最高記録年齢23年5か月27日",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

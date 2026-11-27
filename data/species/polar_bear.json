@@ -1,0 +1,110 @@
+{
+  "id": "polar_bear",
+  "name": "ホッキョクグマ",
+  "sci": "Ursus maritimus",
+  "group": "哺乳類",
+  "emoji": "🐻‍❄️",
+  "dataRegion": "アメリカ・アラスカのボーフォート海",
+  "intro": "北の海の氷の上で、アザラシをとってくらす大きなクマ。",
+  "start": "雪の巣穴から初めて外に出た日",
+  "cohort": {
+    "size": 2,
+    "unit": "頭",
+    "label": "いっしょに生まれたきょうだい",
+    "src": [
+      "anage_polar_bear"
+    ]
+  },
+  "stages": [
+    {
+      "label": "子グマ(1年目)",
+      "years": 1,
+      "survival": 0.651,
+      "src": [
+        "usgs_amstrup_durner_1995"
+      ],
+      "estimated": false,
+      "note": "1年目の生存率0.651(95%信頼区間0.610〜0.675)。巣穴を出てから離乳までは0.676",
+      "surviveText": [
+        "お母さんのあとについて、氷の上を歩いた。",
+        "お母さんがとったアザラシを分けてもらった。"
+      ],
+      "dieText": [
+        "冷たい海を泳ぎきれなかった。",
+        "お母さんとはぐれてしまった。",
+        "お腹をすかせたまま力つきた。"
+      ]
+    },
+    {
+      "label": "子グマ(2年目)",
+      "years": 1,
+      "survival": 0.86,
+      "src": [
+        "usgs_amstrup_durner_1995"
+      ],
+      "estimated": false,
+      "note": "2年目の生存率0.860(95%信頼区間0.751〜0.903)",
+      "surviveText": [
+        "アザラシの待ちぶせを、まねして覚えた。",
+        "お母さんと別れて、ひとり立ちした。"
+      ],
+      "dieText": [
+        "氷がとけて、えさがとれなかった。",
+        "大きなオスのクマに出会ってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 30,
+      "survival": 0.969,
+      "src": [
+        "usgs_amstrup_durner_1995",
+        "seaworld_polar_bear"
+      ],
+      "estimated": false,
+      "note": "おとなのメスの年生存率0.969(範囲0.952〜0.983)。若いクマの値は示されていないため、2歳からこの値を使う。repeatは野生で知られている最高齢32年から2歳を引いた回数",
+      "surviveText": [
+        "氷の上で大きなアザラシをつかまえた。",
+        "また冬の海が凍った。",
+        "雪の巣穴で子を産んだ。"
+      ],
+      "dieText": [
+        "氷のない夏が長すぎた。",
+        "年をとって、静かに眠りについた。",
+        "人の狩りにあってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "usgs_amstrup_durner_1995",
+      "title": "Survival rates of radio-collared female polar bears and their dependent young",
+      "publisher": "U.S. Geological Survey(Amstrup & Durner 1995, Canadian Journal of Zoology)",
+      "url": "https://www.usgs.gov/publications/survival-rates-radio-collared-female-polar-bears-and-their-dependent-young",
+      "values": "おとなのメスの年生存率0.969(0.952〜0.983)/巣穴を出てから離乳まで0.676/1年目0.651(0.610〜0.675)/2年目0.860(0.751〜0.903)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_polar_bear",
+      "title": "AnAge entry for Ursus maritimus",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Ursus_maritimus",
+      "values": "一腹の子の数2頭(最高寿命43.8年は飼育下の記録のため使っていない)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "seaworld_polar_bear",
+      "title": "Polar Bears - Longevity & Causes of Death",
+      "publisher": "SeaWorld Parks & Entertainment",
+      "url": "https://seaworld.org/animals/all-about/polar-bears/longevity/",
+      "values": "北極で知られている最高齢は32年/多くは15〜18年をこえて生きない/飼育下の最高齢45年",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "maxAgeBasis": "野生の記録",
+  "caveats": [
+    "おとなの年生存率0.969はおとなのメスの平均値で、年をとってからの死亡の増加を含まない。そのため32歳まで生きる割合が約22%と、「多くは15〜18年をこえない」という記述より高めに出る。",
+    "最高齢32年は水族館運営団体のページの値(一次資料は未確認)。"
+  ]
+}

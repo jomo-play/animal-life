@@ -1,0 +1,206 @@
+{
+  "id": "chimpanzee",
+  "name": "チンパンジー",
+  "sci": "Pan troglodytes",
+  "group": "哺乳類",
+  "emoji": "🐒",
+  "dataRegion": "ウガンダ・キバレ国立公園ンゴゴ",
+  "intro": "道具を使い、仲間と助け合って森でくらす、人にいちばん近い動物。",
+  "start": "生まれた日",
+  "cohort": {
+    "size": 1,
+    "unit": "頭",
+    "label": "いっしょに生まれた子",
+    "src": [
+      "anage_chimpanzee"
+    ]
+  },
+  "stages": [
+    {
+      "label": "赤ちゃん(0〜1歳)",
+      "years": 1,
+      "survival": 0.85,
+      "src": [
+        "wood_2017_ngogo"
+      ],
+      "estimated": true,
+      "note": "生命表の0歳の死亡率q0=0.15から 1-0.15=0.85 と計算",
+      "surviveText": [
+        "お母さんのおなかにしがみついて森を移動した。",
+        "お母さんのおっぱいを飲んで育った。"
+      ],
+      "dieText": [
+        "病気で動けなくなった。",
+        "寒い雨の日に体が冷えてしまった。"
+      ]
+    },
+    {
+      "label": "1歳",
+      "years": 1,
+      "survival": 0.94,
+      "src": [
+        "wood_2017_ngogo"
+      ],
+      "estimated": true,
+      "note": "生命表の1歳の死亡率q1=0.06から 1-0.06=0.94 と計算",
+      "surviveText": [
+        "お母さんの背中に乗って、森を見わたした。",
+        "初めて木の実をかじった。"
+      ],
+      "dieText": [
+        "病気で弱ってしまった。",
+        "お母さんとはぐれてしまった。"
+      ]
+    },
+    {
+      "label": "子ども(2〜10歳)",
+      "years": 1,
+      "repeat": 8,
+      "survival": 0.9936,
+      "src": [
+        "wood_2017_ngogo"
+      ],
+      "estimated": true,
+      "note": "生存割合lx 2歳0.80→10歳0.76から、8年分 0.95 の8乗根で1年あたり0.9936と計算",
+      "surviveText": [
+        "小枝でシロアリをつる方法を覚えた。",
+        "仲間と木の上で追いかけっこをした。"
+      ],
+      "dieText": [
+        "病気で動けなくなった。",
+        "木から落ちてしまった。"
+      ]
+    },
+    {
+      "label": "若者(10〜20歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.996,
+      "src": [
+        "wood_2017_ngogo"
+      ],
+      "estimated": true,
+      "note": "lx 10歳0.76→20歳0.73から、1年あたり0.996と計算",
+      "surviveText": [
+        "仲間と毛づくろいをしあった。",
+        "群れのなわばりを見回りに行った。"
+      ],
+      "dieText": [
+        "となりの群れとのけんかでけがをした。",
+        "病気で弱ってしまった。"
+      ]
+    },
+    {
+      "label": "おとな(20〜30歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.9756,
+      "src": [
+        "wood_2017_ngogo"
+      ],
+      "estimated": true,
+      "note": "lx 20歳0.73→30歳0.57から、1年あたり0.9756と計算",
+      "surviveText": [
+        "石で固い木の実を割った。",
+        "子どもが生まれた。"
+      ],
+      "dieText": [
+        "群れの順位あらそいでけがをした。",
+        "病気が群れに広がった。"
+      ]
+    },
+    {
+      "label": "おとな(30〜40歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.9766,
+      "src": [
+        "wood_2017_ngogo"
+      ],
+      "estimated": true,
+      "note": "lx 30歳0.57→40歳0.45から、1年あたり0.9766と計算",
+      "surviveText": [
+        "若い仲間に食べ物の場所を教えた。",
+        "イチジクがたくさん実る季節が来た。"
+      ],
+      "dieText": [
+        "病気で弱ってしまった。",
+        "けがが治らなかった。"
+      ]
+    },
+    {
+      "label": "年をとったおとな(40〜50歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.9502,
+      "src": [
+        "wood_2017_ngogo"
+      ],
+      "estimated": true,
+      "note": "lx 40歳0.45→50歳0.27から、1年あたり0.9502と計算",
+      "surviveText": [
+        "孫と毛づくろいをした。",
+        "ゆっくりと森を歩いた。"
+      ],
+      "dieText": [
+        "年をとって、静かに眠りについた。",
+        "病気で弱ってしまった。"
+      ]
+    },
+    {
+      "label": "長老(50〜60歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.9221,
+      "src": [
+        "wood_2017_ngogo"
+      ],
+      "estimated": true,
+      "note": "lx 50歳0.27→60歳0.12から、1年あたり0.9221と計算",
+      "surviveText": [
+        "群れのみんなに見守られてすごした。",
+        "また雨の季節をむかえた。"
+      ],
+      "dieText": [
+        "年をとって、静かに眠りについた。",
+        "寒い雨の季節をこえられなかった。"
+      ]
+    },
+    {
+      "label": "大長老(60歳〜)",
+      "years": 1,
+      "repeat": 6,
+      "survival": 0.8706,
+      "src": [
+        "wood_2017_ngogo"
+      ],
+      "estimated": true,
+      "note": "lx 60歳0.12→65歳0.06から、1年あたり0.8706と計算。repeatはンゴゴの最高年齢66歳から60歳を引いた回数",
+      "surviveText": [
+        "森でいちばんの長生きになった。",
+        "日なたでのんびり休んだ。"
+      ],
+      "dieText": [
+        "年をとって、静かに眠りについた。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wood_2017_ngogo",
+      "title": "Favorable ecological circumstances promote life expectancy in chimpanzees similar to that of human hunter-gatherers",
+      "publisher": "Journal of Human Evolution 105 (Wood, Watts, Mitani & Langergraber 2017) / PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5526083/",
+      "values": "表2(ンゴゴ、男女合計): q0=0.15、q1=0.06/生存割合lx 1歳0.85・2歳0.80・5歳0.79・10歳0.76・15歳0.76・20歳0.73・25歳0.62・30歳0.57・35歳0.50・40歳0.45・45歳0.35・50歳0.27・55歳0.17・60歳0.12・65歳0.06/表1 ンゴゴの最高年齢66歳(表2のlxから計算した出生時平均余命が約32.8年となり、論文の値32.8年と一致)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_chimpanzee",
+      "title": "AnAge entry for Pan troglodytes",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Pan_troglodytes",
+      "values": "一度に生まれる子の数1頭",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

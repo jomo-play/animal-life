@@ -1,0 +1,159 @@
+{
+  "id": "common_frog",
+  "name": "ヨーロッパアカガエル",
+  "sci": "Rana temporaria",
+  "group": "両生類",
+  "emoji": "🐸",
+  "dataRegion": "ヨーロッパ(既存研究の値をまとめたもの)",
+  "intro": "ヨーロッパの池や林にすむ、茶色いカエル。",
+  "start": "卵",
+  "cohort": {
+    "size": 650,
+    "unit": "個",
+    "label": "1匹のお母さんが産む卵",
+    "src": [
+      "biek2002"
+    ]
+  },
+  "stages": [
+    {
+      "label": "卵",
+      "years": 0.058,
+      "survival": 0.92,
+      "src": [
+        "biek2002",
+        "froglife_common_frog"
+      ],
+      "estimated": false,
+      "note": "胚(卵)の生存率0.92。期間はふ化まで2〜4週間の中央値(3週間)",
+      "surviveText": [
+        "オタマジャクシがふ化した。",
+        "あたたかい日がつづき、無事に育った。"
+      ],
+      "dieText": [
+        "霜で卵がこおってしまった。",
+        "池の水がへってしまった。"
+      ]
+    },
+    {
+      "label": "オタマジャクシ",
+      "years": 0.268,
+      "survival": 0.06,
+      "src": [
+        "biek2002",
+        "wildlifetrusts_common_frog"
+      ],
+      "estimated": false,
+      "note": "幼生(オタマジャクシ)の生存率0.06。期間はふ化から子ガエルになるまで約14週間",
+      "surviveText": [
+        "足が生えて、小さなカエルになった。",
+        "水草のかげにかくれて、たすかった。"
+      ],
+      "dieText": [
+        "ヤゴに見つかってしまった。",
+        "魚に食べられてしまった。",
+        "池が干上がってしまった。"
+      ]
+    },
+    {
+      "label": "子ガエル(はじめての冬まで)",
+      "years": 0.674,
+      "survival": 0.34,
+      "src": [
+        "biek2002"
+      ],
+      "estimated": true,
+      "note": "変態直後の子ガエルの生存率0.34。論文では卵・オタマジャクシ・子ガエルの3段階で最初の1年になるため、期間は1年から前の2段階(0.058+0.268)を引いた残り",
+      "surviveText": [
+        "はじめての冬をこえた。",
+        "草むらで小さな虫を食べて育った。"
+      ],
+      "dieText": [
+        "鳥に見つかってしまった。",
+        "暑い日にかわいてしまった。"
+      ]
+    },
+    {
+      "label": "わかもの",
+      "years": 1,
+      "repeat": 2,
+      "survival": 0.33,
+      "src": [
+        "biek2002"
+      ],
+      "estimated": false,
+      "note": "幼体(おとな前)の年生存率0.33。おとなになるのは3年目なので2回くりかえす",
+      "surviveText": [
+        "また1年、元気にすごした。",
+        "林の中で冬ごもりをした。"
+      ],
+      "dieText": [
+        "ヘビに見つかってしまった。",
+        "寒い冬をこえられなかった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 11,
+      "survival": 0.43,
+      "src": [
+        "biek2002",
+        "anage_rana_temporaria",
+        "miaud1999_rana"
+      ],
+      "estimated": false,
+      "note": "おとなの年生存率0.43(ヨーロッパの文献値。フランスの高山の集団では約0.80という報告もある)。repeatは野生での最高年齢14年から3年を引いた回数",
+      "surviveText": [
+        "春の池で卵を産んだ。",
+        "また春をむかえた。"
+      ],
+      "dieText": [
+        "サギに見つかってしまった。",
+        "冬ごもり中に力つきてしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "biek2002",
+      "title": "What Is Missing in Amphibian Decline Research: Insights from Ecological Sensitivity Analysis (Biek, Funk, Maxell & Mills 2002, Conservation Biology 16(3): 728-734) Table 1",
+      "publisher": "University of Montana (Mills Lab)",
+      "url": "https://www.umt.edu/research/millslab/files/2015/01/biekwhat.pdf",
+      "values": "ヨーロッパアカガエル:胚0.92/幼生0.06/変態直後0.34/幼体の年生存率0.33/おとなの年生存率0.43/一腹卵数650/成熟3年。胚・幼生・変態直後の3つで最初の1年(いくつかは近い仲間の値を代用)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "froglife_common_frog",
+      "title": "Common Frog (Rana temporaria)",
+      "publisher": "Froglife",
+      "url": "https://www.froglife.org/info-advice/amphibians-and-reptiles/common-frog-2/",
+      "values": "産卵から2〜4週間でオタマジャクシがふ化/成熟は2〜3歳",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "wildlifetrusts_common_frog",
+      "title": "Common frog",
+      "publisher": "The Wildlife Trusts",
+      "url": "https://www.wildlifetrusts.org/wildlife-explorer/amphibians/common-frog",
+      "values": "ふ化後、子ガエルになるまで約14週間/平均寿命5〜10年",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_rana_temporaria",
+      "title": "AnAge entry for Rana temporaria",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Rana_temporaria",
+      "values": "野生では最高14年生きることがある(飼育下の最高27年)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "miaud1999_rana",
+      "title": "Variations in life-history traits in the common frog Rana temporaria (Miaud, Guyétant & Elmberg 1999, Journal of Zoology 249: 61-73) 要旨",
+      "publisher": "Cambridge University Press",
+      "url": "https://www.cambridge.org/core/journals/journal-of-zoology/article/abs/variations-in-life-history-traits-in-the-common-frog-rana-temporaria-amphibia-anura-a-literature-review-and-new-data-from-the-french-alps/7B9C432E181FDEEBA2D34AE4C5D1491A",
+      "values": "フランス・アルプスの集団でおとなの生存率は雌雄とも約0.80(noteでの比較用)",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

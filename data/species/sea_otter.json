@@ -1,0 +1,170 @@
+{
+  "id": "sea_otter",
+  "name": "ラッコ",
+  "sci": "Enhydra lutris",
+  "group": "哺乳類",
+  "emoji": "🦦",
+  "dataRegion": "アメリカ・カリフォルニア州モントレー",
+  "intro": "海にぷかぷか浮かび、おなかの上で貝を割って食べる。",
+  "start": "生まれた日",
+  "cohort": {
+    "size": 1,
+    "unit": "匹",
+    "label": "いっしょに生まれた子",
+    "src": [
+      "anage_sea_otter"
+    ]
+  },
+  "stages": [
+    {
+      "label": "赤ちゃん(離乳まで)",
+      "years": 0.5,
+      "survival": 0.675,
+      "src": [
+        "usgs_sea_otter_2019",
+        "anage_sea_otter"
+      ],
+      "estimated": true,
+      "note": "離乳まで育つ割合は母親の年齢により0.64(3歳の母)〜0.71(10歳の母)。幅の中央の値0.675を使用。離乳は生後約175日",
+      "surviveText": [
+        "お母さんのおなかの上で眠った。",
+        "初めて自分で潜ってみた。"
+      ],
+      "dieText": [
+        "冷たい海で体が冷えてしまった。",
+        "お母さんとはぐれてしまった。",
+        "嵐の海で力つきた。"
+      ]
+    },
+    {
+      "label": "1歳",
+      "years": 1,
+      "survival": 0.779,
+      "src": [
+        "usgs_sea_otter_2019"
+      ],
+      "estimated": false,
+      "note": "モントレー(2008〜12年)のメス1歳の年生存率。離乳後から2歳までをこの値で代用",
+      "surviveText": [
+        "ひとりで貝をとれるようになった。",
+        "海草に体をまいて眠った。"
+      ],
+      "dieText": [
+        "えさを見つけられなかった。",
+        "サメにかまれてしまった。"
+      ]
+    },
+    {
+      "label": "2歳",
+      "years": 1,
+      "survival": 0.859,
+      "src": [
+        "usgs_sea_otter_2019"
+      ],
+      "estimated": false,
+      "note": "モントレー(2008〜12年)のメス2歳の年生存率",
+      "surviveText": [
+        "石で貝を割るのが上手になった。",
+        "仲間のラッコたちと浮かんですごした。"
+      ],
+      "dieText": [
+        "病気で弱ってしまった。",
+        "サメにかまれてしまった。"
+      ]
+    },
+    {
+      "label": "若いおとな(3〜6歳)",
+      "years": 1,
+      "repeat": 4,
+      "survival": 0.944,
+      "src": [
+        "usgs_sea_otter_2019"
+      ],
+      "estimated": true,
+      "note": "メス3〜6歳の年生存率0.929・0.953・0.954・0.941をかけ合わせ、4乗根(幾何平均)で0.944と計算",
+      "surviveText": [
+        "赤ちゃんを産んで育てた。",
+        "ウニをたくさん食べた。"
+      ],
+      "dieText": [
+        "子育てでやせて、力つきた。",
+        "病気で動けなくなった。"
+      ]
+    },
+    {
+      "label": "おとな(7〜10歳)",
+      "years": 1,
+      "repeat": 4,
+      "survival": 0.861,
+      "src": [
+        "usgs_sea_otter_2019"
+      ],
+      "estimated": true,
+      "note": "メス7〜10歳の年生存率0.906・0.884・0.853・0.803の幾何平均で0.861と計算",
+      "surviveText": [
+        "また赤ちゃんを育てた。",
+        "おだやかな海でのんびり浮かんだ。"
+      ],
+      "dieText": [
+        "子育てでやせて、力つきた。",
+        "病気で弱ってしまった。"
+      ]
+    },
+    {
+      "label": "年をとったおとな(11〜14歳)",
+      "years": 1,
+      "repeat": 4,
+      "survival": 0.721,
+      "src": [
+        "usgs_sea_otter_2019"
+      ],
+      "estimated": true,
+      "note": "メス11〜14歳の年生存率0.798・0.752・0.703・0.639の幾何平均で0.721と計算",
+      "surviveText": [
+        "若いラッコたちのそばで浮かんだ。",
+        "また春の海をむかえた。"
+      ],
+      "dieText": [
+        "歯がすり減って、貝を食べにくくなった。",
+        "年をとって、静かに眠りについた。"
+      ]
+    },
+    {
+      "label": "おばあちゃん(15〜18歳)",
+      "years": 1,
+      "repeat": 4,
+      "survival": 0.559,
+      "src": [
+        "usgs_sea_otter_2019"
+      ],
+      "estimated": true,
+      "note": "メス15〜18歳の年生存率0.573・0.524・0.548・0.594の幾何平均で0.559と計算。資料の表は18歳まで",
+      "surviveText": [
+        "長生きのラッコになった。",
+        "昔からの海草の森でくらした。"
+      ],
+      "dieText": [
+        "年をとって、静かに眠りについた。",
+        "冷たい冬の海に力つきた。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "usgs_sea_otter_2019",
+      "title": "Southern sea otter (Enhydra lutris nereis) population biology at Big Sur and Monterey, California (Open-File Report 2019-1022)",
+      "publisher": "U.S. Geological Survey",
+      "url": "https://pubs.usgs.gov/of/2019/1022/ofr20191022.pdf",
+      "values": "離乳まで育つ割合 0.64(3歳の母)〜0.71(10歳の母)/表28 モントレー2008〜12年のメス年生存率: 1歳0.779・2歳0.859・3歳0.929・4歳0.953・5歳0.954・6歳0.941・7歳0.906・8歳0.884・9歳0.853・10歳0.803・11歳0.798・12歳0.752・13歳0.703・14歳0.639・15歳0.573・16歳0.524・17歳0.548・18歳0.594",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_sea_otter",
+      "title": "AnAge entry for Enhydra lutris",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Enhydra_lutris",
+      "values": "一度に生まれる子の数1匹/離乳まで175日",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

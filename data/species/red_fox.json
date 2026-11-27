@@ -1,0 +1,127 @@
+{
+  "id": "red_fox",
+  "name": "アカギツネ",
+  "sci": "Vulpes vulpes",
+  "group": "哺乳類",
+  "emoji": "🦊",
+  "dataRegion": "イギリス・ブリストル(都市部)",
+  "intro": "野原にも町にもくらす、かしこいキツネ。",
+  "start": "子ギツネとして巣穴の外に出たころ",
+  "cohort": {
+    "size": 4,
+    "unit": "匹",
+    "label": "同じ巣穴のきょうだい",
+    "src": [
+      "devenish_nelson_2012_fox"
+    ]
+  },
+  "stages": [
+    {
+      "label": "子ギツネ(0歳)",
+      "years": 1,
+      "survival": 0.48,
+      "src": [
+        "devenish_nelson_2012_fox"
+      ],
+      "estimated": false,
+      "note": "ブリストル(1977〜85年)の0歳の生存率P1=0.48。年齢構成(主に交通事故で死んだ個体)から求めた値で、巣穴の中での死亡は含まれないと考えられる",
+      "surviveText": [
+        "巣穴の前できょうだいとじゃれあった。",
+        "親から虫やネズミのとり方を教わった。"
+      ],
+      "dieText": [
+        "道路をわたりきれなかった。",
+        "病気で動けなくなった。",
+        "新しいなわばりを探す旅で力つきた。"
+      ]
+    },
+    {
+      "label": "1歳",
+      "years": 1,
+      "survival": 0.54,
+      "src": [
+        "devenish_nelson_2012_fox"
+      ],
+      "estimated": false,
+      "note": "ブリストルの1歳の生存率P2=0.54",
+      "surviveText": [
+        "自分のなわばりを見つけた。",
+        "初めて子ギツネを育てた。"
+      ],
+      "dieText": [
+        "道路をわたりきれなかった。",
+        "皮ふの病気で弱ってしまった。"
+      ]
+    },
+    {
+      "label": "2歳",
+      "years": 1,
+      "survival": 0.53,
+      "src": [
+        "devenish_nelson_2012_fox"
+      ],
+      "estimated": false,
+      "note": "ブリストルの2歳の生存率P3=0.53",
+      "surviveText": [
+        "夜の町をすばやく走りぬけた。",
+        "また春に子ギツネが生まれた。"
+      ],
+      "dieText": [
+        "道路をわたりきれなかった。",
+        "病気で動けなくなった。"
+      ]
+    },
+    {
+      "label": "おとな(3歳〜)",
+      "years": 1,
+      "repeat": 9,
+      "survival": 0.51,
+      "src": [
+        "devenish_nelson_2012_fox",
+        "wildlifeonline_fox_longevity",
+        "mulder2004_fox"
+      ],
+      "estimated": false,
+      "note": "ブリストルの3歳以上の生存率P4*=0.51。repeatは耳標で年齢が確かな野生の最高齢12年から3歳を引いた回数",
+      "surviveText": [
+        "なわばりを守りぬいた。",
+        "寒い冬の夜をこえた。",
+        "家族と庭のすみで休んだ。"
+      ],
+      "dieText": [
+        "道路をわたりきれなかった。",
+        "年をとって、静かに眠りについた。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "devenish_nelson_2012_fox",
+      "title": "Sarcoptic mange and the demography of the red fox, Vulpes vulpes (PhD thesis)",
+      "publisher": "Durham University (Devenish-Nelson 2012) / 元データ Harris & Smith 1987",
+      "url": "http://etheses.dur.ac.uk/6960/2/E_Devenish_Nelson_-_Final_PhD_Thesis.pdf",
+      "values": "表4.1 ブリストル(1977〜85年、1628頭)の生存率: P1 0.48・P2 0.54・P3 0.53・P4* 0.51/表6.2 平均一腹子数4.00",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "wildlifeonline_fox_longevity",
+      "title": "Red Fox Longevity",
+      "publisher": "Wildlife Online",
+      "url": "https://www.wildlifeonline.me.uk/animals/article/red-fox-longevity",
+      "values": "オランダの砂丘で子ギツネの時に耳標を付けたメスが1993年に12歳で死亡(Mulder 2004)/野生では2〜6年がふつう",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "mulder2004_fox",
+      "title": "Longevity records in the red fox (Mulder 2004)",
+      "publisher": "Lutra 47(1)(ページ番号未確認・原文未確認)",
+      "url": "https://www.zoogdiervereniging.nl/kennisbank/publicaties/2004/lutra-471editorial2004",
+      "values": "Wildlife Online が紹介する元の記録: 耳標を付けた野生のメスが12歳で死亡。URLは同号の目次(編集後記)ページで、論文本文は未確認",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "maxAgeBasis": "野生の記録",
+  "caveats": [
+    "最高齢12年は二次資料(Wildlife Online)が紹介する Mulder 2004(Lutra 47(1)、ページ番号未確認)の記録。原論文は未確認。"
+  ]
+}

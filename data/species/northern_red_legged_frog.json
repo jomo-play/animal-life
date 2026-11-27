@@ -1,0 +1,143 @@
+{
+  "id": "northern_red_legged_frog",
+  "name": "アカアシガエル",
+  "sci": "Rana aurora",
+  "group": "両生類",
+  "emoji": "🐸",
+  "dataRegion": "北アメリカ西部(既存研究の値をまとめたもの/期間はカナダ・ブリティッシュコロンビア州)",
+  "intro": "うしろ足の内側が赤い、北アメリカ西部のカエル。",
+  "start": "卵",
+  "cohort": {
+    "size": 605,
+    "unit": "個",
+    "label": "1回に産まれる卵",
+    "src": [
+      "bc_cdc_red_legged_frog"
+    ]
+  },
+  "stages": [
+    {
+      "label": "卵",
+      "years": 0.104,
+      "survival": 0.92,
+      "src": [
+        "biek2002",
+        "bc_cdc_red_legged_frog"
+      ],
+      "estimated": false,
+      "note": "胚(卵)の生存率0.92。期間はふ化まで1〜1.5か月の中央値(1.25か月)",
+      "surviveText": [
+        "オタマジャクシがふ化した。",
+        "冷たい水の中で、ゆっくり育った。"
+      ],
+      "dieText": [
+        "卵にカビが生えてしまった。",
+        "池の水がへってしまった。"
+      ]
+    },
+    {
+      "label": "オタマジャクシ",
+      "years": 0.25,
+      "survival": 0.03,
+      "src": [
+        "biek2002",
+        "bc_cdc_red_legged_frog"
+      ],
+      "estimated": false,
+      "note": "幼生の生存率0.03。期間は2.5〜3.5か月の中央値(3か月)",
+      "surviveText": [
+        "足が生えて、小さなカエルになった。",
+        "水草のかげにかくれて、たすかった。"
+      ],
+      "dieText": [
+        "大きな魚に食べられてしまった。",
+        "ヤゴに見つかってしまった。",
+        "池が干上がってしまった。"
+      ]
+    },
+    {
+      "label": "子ガエル(はじめての冬まで)",
+      "years": 0.646,
+      "survival": 0.55,
+      "src": [
+        "biek2002"
+      ],
+      "estimated": true,
+      "note": "変態直後の生存率0.55。論文では卵・オタマジャクシ・子ガエルで最初の1年のため、期間は1年から前の2段階(0.104+0.25)を引いた残り",
+      "surviveText": [
+        "はじめての冬をこえた。",
+        "しめった森の中で虫を食べて育った。"
+      ],
+      "dieText": [
+        "鳥に見つかってしまった。",
+        "ヘビに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "わかもの",
+      "years": 1,
+      "repeat": 2,
+      "survival": 0.36,
+      "src": [
+        "biek2002",
+        "bc_cdc_red_legged_frog"
+      ],
+      "estimated": false,
+      "note": "幼体の年生存率0.36。おとなになるのは3年目なので2回くりかえす",
+      "surviveText": [
+        "また1年、元気にすごした。",
+        "森の落ち葉の下で冬をこした。"
+      ],
+      "dieText": [
+        "アライグマに見つかってしまった。",
+        "寒い冬をこえられなかった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 12,
+      "survival": 0.69,
+      "src": [
+        "biek2002",
+        "anage_rana_aurora"
+      ],
+      "estimated": false,
+      "note": "おとなの年生存率0.69。repeatは最高年齢15年から3年を引いた回数",
+      "surviveText": [
+        "冬の終わりの池で卵を産んだ。",
+        "また春をむかえた。"
+      ],
+      "dieText": [
+        "サギに見つかってしまった。",
+        "道をわたるとちゅうで力つきた。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "biek2002",
+      "title": "What Is Missing in Amphibian Decline Research: Insights from Ecological Sensitivity Analysis (Biek, Funk, Maxell & Mills 2002, Conservation Biology 16(3): 728-734) Table 1",
+      "publisher": "University of Montana (Mills Lab)",
+      "url": "https://www.umt.edu/research/millslab/files/2015/01/biekwhat.pdf",
+      "values": "アカアシガエル:胚0.92/幼生0.03/変態直後0.55/幼体の年生存率0.36/おとなの年生存率0.69/一腹卵数303(モデル用のメス)/成熟3年。胚・幼生・変態直後の3つで最初の1年(いくつかは近い仲間の値を代用)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "bc_cdc_red_legged_frog",
+      "title": "Species Summary: Rana aurora (Northern Red-legged Frog)",
+      "publisher": "British Columbia Conservation Data Centre (カナダ・BC州政府)",
+      "url": "https://a100.gov.bc.ca/pub/eswp/speciesSummary.do?id=19586",
+      "values": "卵は水温によって1〜1.5か月でふ化/幼生期間2.5〜3.5か月/1回の産卵数は平均530〜680個/3歳以上で成熟/飼育下で15年生きた例",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_rana_aurora",
+      "title": "AnAge entry for Rana aurora",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Rana_aurora",
+      "values": "最高寿命15年(野生)/カリフォルニアではおそらく10年前後",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "european_robin",
+  "name": "ヨーロッパコマドリ",
+  "sci": "Erithacus rubecula",
+  "group": "鳥類",
+  "emoji": "🐦",
+  "dataRegion": "イギリス",
+  "intro": "オレンジ色の胸で、冬でもきれいな声で歌う鳥。",
+  "start": "巣立ちの日",
+  "cohort": {
+    "size": 5,
+    "unit": "羽",
+    "label": "同じ巣のきょうだい",
+    "src": [
+      "bto_robin"
+    ]
+  },
+  "stages": [
+    {
+      "label": "巣立ちから最初の1年",
+      "years": 1,
+      "survival": 0.41,
+      "src": [
+        "bto_robin"
+      ],
+      "estimated": false,
+      "note": "BTOの足環調査による幼鳥(1年目)の生存率",
+      "surviveText": [
+        "自分のなわばりを見つけた。",
+        "庭で、土をほる人のそばのミミズを食べて冬をこえた。",
+        "初めての冬をこえた。"
+      ],
+      "dieText": [
+        "初めての冬をこえられなかった。",
+        "ネコに見つかってしまった。",
+        "ハイタカに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 7,
+      "survival": 0.419,
+      "src": [
+        "bto_robin"
+      ],
+      "estimated": false,
+      "note": "成鳥の年生存率。repeatは記録上の最高年齢8年4か月30日(約8年)から最初の1年を引いた回数",
+      "surviveText": [
+        "なわばりで歌い、ひなを育てた。",
+        "また春をむかえた。"
+      ],
+      "dieText": [
+        "寒い冬に力つきた。",
+        "ネコに見つかってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bto_robin",
+      "title": "BTO BirdFacts: Robin",
+      "publisher": "British Trust for Ornithology",
+      "url": "https://bto.org/learn/about-birds/birdfacts/robin",
+      "values": "一腹卵数 平均4.87(典型4〜5)/幼鳥1年生存率0.41/成鳥年生存率0.419/最高記録年齢8年4か月30日",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

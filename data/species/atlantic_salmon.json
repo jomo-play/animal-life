@@ -1,0 +1,60 @@
+{
+  "id": "atlantic_salmon",
+  "name": "タイセイヨウサケ",
+  "sci": "Salmo salar",
+  "group": "魚類",
+  "emoji": "🐟",
+  "dataRegion": "北大西洋の川(北米・ヨーロッパの275集団のまとめ)",
+  "intro": "川で生まれて海で大きくなり、ふるさとの川へ帰ってくるサケ。",
+  "start": "卵",
+  "stages": [
+    {
+      "label": "卵から川を下る若者(スモルト)になるまで",
+      "years": 2.91,
+      "survival": 0.015,
+      "src": [
+        "hutchings1998"
+      ],
+      "estimated": false,
+      "note": "卵からスモルトまでの生存率1.5%(範囲0.2〜3.2%)、集団平均。期間はスモルトになる平均年齢2.91年(範囲1.04〜5.85年)",
+      "surviveText": [
+        "川の石のかげで冬をこえた。",
+        "体が銀色になり、海へ向かう準備ができた。"
+      ],
+      "dieText": [
+        "大きな魚に食べられてしまった。",
+        "大水で流されてしまった。",
+        "鳥に見つかってしまった。"
+      ]
+    },
+    {
+      "label": "海で育ち、ふるさとの川へ帰るまで",
+      "years": 1.6,
+      "survival": 0.074,
+      "src": [
+        "hutchings1998"
+      ],
+      "estimated": false,
+      "note": "スモルトから1回目の帰りまでの生存率7.4%(範囲1.3〜17.5%)。期間は海ですごす平均1.60年。タイセイヨウサケは産卵後も生き残ることがあるが、その割合は「15%未満が多い」としか示されていないため、ゲームは最初の産卵で終える",
+      "surviveText": [
+        "ふるさとの川に帰り、卵を産んで一生をやりとげた。",
+        "遠い海を旅して、生まれた川に帰って卵を産んだ。"
+      ],
+      "dieText": [
+        "アザラシに見つかってしまった。",
+        "海で大きな魚に食べられてしまった。",
+        "漁の網にかかってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hutchings1998",
+      "title": "Life history variation and growth rate thresholds for maturity in Atlantic salmon, Salmo salar (Hutchings & Jones 1998, CJFAS)",
+      "publisher": "Canadian Journal of Fisheries and Aquatic Sciences",
+      "url": "https://doi.org/10.1139/d98-004",
+      "values": "卵からスモルトまでの生存率1.5%(0.2〜3.2%)/スモルトの年齢2.91年(1.04〜5.85年)/海ですごす年数1.60年(1.00〜2.64年)/スモルトから1回目の帰りまでの生存率7.4%(1.3〜17.5%)/産卵後の冬をこす割合は15%未満が多い",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

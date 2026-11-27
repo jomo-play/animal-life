@@ -1,0 +1,141 @@
+{
+  "id": "leatherback_turtle",
+  "name": "オサガメ",
+  "sci": "Dermochelys coriacea",
+  "group": "爬虫類",
+  "emoji": "🐢",
+  "dataRegion": "太平洋(コスタリカ・プラヤグランデなど)",
+  "intro": "世界でいちばん大きなカメ。やわらかい背中でクラゲを追って旅をする。",
+  "start": "卵",
+  "cohort": {
+    "size": 100,
+    "unit": "個",
+    "label": "同じ巣の卵",
+    "src": [
+      "noaa_leatherback"
+    ],
+    "note": "NOAAの種のページの全体説明の「約100個」。同じページの太平洋個体群の欄では85〜95個"
+  },
+  "stages": [
+    {
+      "label": "巣の中(卵がかえるまで)",
+      "years": 0.17,
+      "survival": 0.47,
+      "src": [
+        "santidrian2012",
+        "noaa_leatherback"
+      ],
+      "estimated": false,
+      "note": "ふ化率0.47±0.25(プラヤグランデ、2004/05〜2009/10年の6シーズン平均)。期間はNOAAの「約2か月」",
+      "surviveText": [
+        "砂の中で卵がかえった。",
+        "きょうだいの声が聞こえた。"
+      ],
+      "dieText": [
+        "卵がかえらなかった。",
+        "砂が暑くなりすぎてしまった。"
+      ]
+    },
+    {
+      "label": "砂の上に出るまで",
+      "years": 0.01,
+      "survival": 0.82,
+      "src": [
+        "santidrian2012"
+      ],
+      "estimated": false,
+      "note": "ふ化した子が巣から出てくる割合0.82±0.22",
+      "surviveText": [
+        "みんなで砂をかいて外に出た。",
+        "夜の砂浜に顔を出した。"
+      ],
+      "dieText": [
+        "砂の中から出られなかった。",
+        "力が足りず外に出られなかった。"
+      ]
+    },
+    {
+      "label": "海での最初の1年",
+      "years": 1,
+      "survival": 0.25,
+      "src": [
+        "jones2012"
+      ],
+      "estimated": false,
+      "note": "1年目の生存率25%(Spotila et al. 1996の仮定値を使用)",
+      "surviveText": [
+        "波をこえて沖へ泳ぎだした。",
+        "小さなクラゲを見つけて食べた。"
+      ],
+      "dieText": [
+        "大きな魚に食べられてしまった。",
+        "鳥に見つかってしまった。"
+      ]
+    },
+    {
+      "label": "子ども〜若者(1〜16歳)",
+      "years": 1,
+      "repeat": 15,
+      "survival": 0.81,
+      "src": [
+        "jones2012"
+      ],
+      "estimated": false,
+      "note": "幼体の年生存率0.81(範囲0.74〜0.87)、モデルの推定値。16歳でおとなになるまでの15年分",
+      "surviveText": [
+        "クラゲを追って遠い海まで旅をした。",
+        "体がぐんと大きくなった。"
+      ],
+      "dieText": [
+        "漁の網にからまってしまった。",
+        "ビニール袋をクラゲとまちがえて弱ってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 34,
+      "survival": 0.8,
+      "src": [
+        "jones2012",
+        "noaa_leatherback"
+      ],
+      "estimated": false,
+      "note": "おとなの年生存率0.80(範囲0.72〜0.84)、モデルの推定値。repeatはNOAAの寿命「50年以上」から16歳を引いた34回。参考: この表で卵から16歳まで生きる割合は約0.4%(約250分の1)",
+      "surviveText": [
+        "砂浜にもどって卵を産んだ。",
+        "クラゲの多い海でたっぷり食べた。"
+      ],
+      "dieText": [
+        "年をとって静かに力つきた。",
+        "漁の網にからまってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "santidrian2012",
+      "title": "Climate Driven Egg and Hatchling Mortality Threatens Survival of Eastern Pacific Leatherback Turtles (Santidrián Tomillo et al. 2012, PLoS ONE)",
+      "publisher": "PLoS ONE",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037602",
+      "values": "プラヤグランデのふ化率0.47±0.25/巣から出てくる割合0.82±0.22(2004/05〜2009/10年)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "jones2012",
+      "title": "Resource Requirements of the Pacific Leatherback Turtle Population (Jones et al. 2012, PLoS ONE)",
+      "publisher": "PLoS ONE",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0045447",
+      "values": "1年目の生存率25%/幼体の年生存率0.81(0.74〜0.87)/おとなの年生存率0.80(0.72〜0.84)/16歳でおとな",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "noaa_leatherback",
+      "title": "Leatherback Turtle",
+      "publisher": "NOAA Fisheries",
+      "url": "https://www.fisheries.noaa.gov/species/leatherback-turtle",
+      "values": "1回に約100個の卵/約2か月で子ガメが出てくる/寿命は50年以上と推定/太平洋の個体群の欄では85〜95個の卵",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

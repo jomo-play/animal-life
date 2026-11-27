@@ -1,0 +1,70 @@
+{
+  "id": "mute_swan",
+  "name": "コブハクチョウ",
+  "sci": "Cygnus olor",
+  "group": "鳥類",
+  "emoji": "🦢",
+  "dataRegion": "イギリス",
+  "intro": "オレンジ色のくちばしの、大きな白い鳥。",
+  "start": "巣立ちの日",
+  "cohort": {
+    "size": 6,
+    "unit": "羽",
+    "label": "同じ巣のきょうだい",
+    "src": [
+      "bto_mute_swan"
+    ]
+  },
+  "stages": [
+    {
+      "label": "若鳥の3年間",
+      "years": 3,
+      "survival": 0.42,
+      "src": [
+        "bto_mute_swan"
+      ],
+      "estimated": false,
+      "note": "BTOの幼鳥生存率(3歳までの合計)。この3年をまとめて1段階とした",
+      "surviveText": [
+        "灰色の羽が、真っ白に生えかわった。",
+        "若い仲間の群れで、川や湖をわたり歩いた。",
+        "3回の冬をこえた。"
+      ],
+      "dieText": [
+        "電線にぶつかってしまった。",
+        "寒い冬に、水草がとれず弱ってしまった。",
+        "キツネに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 26,
+      "survival": 0.85,
+      "src": [
+        "bto_mute_swan"
+      ],
+      "estimated": false,
+      "note": "成鳥の年生存率。repeatは記録上の最高年齢29年1か月11日(約29年)から若鳥の3年を引いた回数",
+      "surviveText": [
+        "つがいで大きな巣をつくり、ひなを育てた。",
+        "川で、家族といっしょにすごした。",
+        "また春をむかえた。"
+      ],
+      "dieText": [
+        "電線にぶつかってしまった。",
+        "鳥の病気にかかってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bto_mute_swan",
+      "title": "BTO BirdFacts: Mute Swan",
+      "publisher": "British Trust for Ornithology",
+      "url": "https://bto.org/learn/about-birds/birdfacts/mute-swan",
+      "values": "一腹卵数 平均5.58(典型4〜7)/幼鳥生存率0.42(3歳まで)/成鳥年生存率0.85/最高記録年齢29年1か月11日/繁殖開始は通常4歳",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

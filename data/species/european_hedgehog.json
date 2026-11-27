@@ -1,0 +1,82 @@
+{
+  "id": "european_hedgehog",
+  "name": "ヨーロッパハリネズミ",
+  "sci": "Erinaceus europaeus",
+  "group": "哺乳類",
+  "emoji": "🦔",
+  "dataRegion": "デンマーク",
+  "intro": "背中のトゲで身を守り、夜の庭で虫をさがす。",
+  "start": "巣を出て歩きはじめたころ",
+  "stages": [
+    {
+      "label": "0歳",
+      "years": 1,
+      "survival": 0.642,
+      "src": ["rasmussen_2023_hedgehog"],
+      "estimated": true,
+      "note": "メスの生命表(死んで見つかった個体の年齢から作成)の0歳の死亡率0.358から 1-0.358=0.642 と計算。巣の中での死亡は含まれない",
+      "surviveText": ["夜の庭でミミズを見つけた。", "落ち葉の巣で初めての冬眠をした。"],
+      "dieText": ["冬眠の前に太りきれなかった。", "道路をわたりきれなかった。", "初めての冬をこえられなかった。"]
+    },
+    {
+      "label": "1歳",
+      "years": 1,
+      "survival": 0.7,
+      "src": ["rasmussen_2023_hedgehog"],
+      "estimated": true,
+      "note": "メスの1歳の死亡率0.300から 1-0.300=0.700 と計算",
+      "surviveText": ["春に冬眠から目をさました。", "初めて赤ちゃんを産んだ。"],
+      "dieText": ["道路をわたりきれなかった。", "病気で動けなくなった。"]
+    },
+    {
+      "label": "2歳",
+      "years": 1,
+      "survival": 0.694,
+      "src": ["rasmussen_2023_hedgehog"],
+      "estimated": true,
+      "note": "メスの2歳の死亡率0.306から 1-0.306=0.694 と計算",
+      "surviveText": ["生けがきの下に新しい巣を作った。", "また赤ちゃんを育てた。"],
+      "dieText": ["道路をわたりきれなかった。", "冬眠中に力つきた。"]
+    },
+    {
+      "label": "3歳",
+      "years": 1,
+      "survival": 0.471,
+      "src": ["rasmussen_2023_hedgehog"],
+      "estimated": true,
+      "note": "メスの3歳の死亡率0.529から 1-0.529=0.471 と計算",
+      "surviveText": ["夏の夜にカブトムシをたくさん食べた。", "また冬眠をのりこえた。"],
+      "dieText": ["病気で弱ってしまった。", "道路をわたりきれなかった。"]
+    },
+    {
+      "label": "4歳",
+      "years": 1,
+      "survival": 0.438,
+      "src": ["rasmussen_2023_hedgehog"],
+      "estimated": true,
+      "note": "メスの4歳の死亡率0.562から 1-0.562=0.438 と計算",
+      "surviveText": ["いつもの庭をゆっくり歩いた。", "春の訪れを感じた。"],
+      "dieText": ["年をとって、冬眠から目ざめなかった。", "病気で動けなくなった。"]
+    },
+    {
+      "label": "5歳",
+      "years": 1,
+      "survival": 0.143,
+      "src": ["rasmussen_2023_hedgehog"],
+      "estimated": true,
+      "note": "メスの5歳の死亡率0.857から 1-0.857=0.143 と計算。この資料のメスは6歳が最高(オスでは16歳の記録あり)",
+      "surviveText": ["とても長生きのハリネズミになった。"],
+      "dieText": ["年をとって、静かに眠りについた。", "冬眠から目ざめなかった。"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "rasmussen_2023_hedgehog",
+      "title": "Anyone Can Get Old—All You Have to Do Is Live Long Enough: Understanding Mortality and Life Expectancy in European Hedgehogs (Erinaceus europaeus)",
+      "publisher": "Animals 13(4):626 (2023) / PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9951656/",
+      "values": "メスの生命表(表4)の死亡率qx: 0歳0.358・1歳0.300・2歳0.306・3歳0.529・4歳0.562・5歳0.857・6歳1.000/死亡時の年齢は0〜16歳(388頭)",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

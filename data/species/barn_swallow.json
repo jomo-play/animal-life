@@ -1,0 +1,71 @@
+{
+  "id": "barn_swallow",
+  "name": "ツバメ",
+  "sci": "Hirundo rustica",
+  "group": "鳥類",
+  "emoji": "🐦",
+  "dataRegion": "イギリス",
+  "intro": "春に南の国から来て、軒下に巣をつくる鳥。",
+  "start": "巣立ちの日",
+  "cohort": {
+    "size": 5,
+    "unit": "羽",
+    "label": "同じ巣のきょうだい",
+    "src": [
+      "bto_swallow"
+    ]
+  },
+  "stages": [
+    {
+      "label": "巣立ちから最初の1年",
+      "years": 1,
+      "survival": 0.395,
+      "src": [
+        "bto_swallow"
+      ],
+      "estimated": false,
+      "note": "BTOの足環調査による幼鳥(1年目)の生存率(秋にアフリカ南部へ渡り、春に戻るまでをふくむ)",
+      "surviveText": [
+        "海と砂漠をこえて、アフリカ南部にたどり着いた。",
+        "長い旅を終えて、生まれた村に帰ってきた。",
+        "飛びながら虫をとるのが上手になった。"
+      ],
+      "dieText": [
+        "渡りの途中、嵐にまきこまれてしまった。",
+        "砂漠をこえる途中で力つきた。",
+        "ハヤブサに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.374,
+      "src": [
+        "bto_swallow"
+      ],
+      "estimated": false,
+      "note": "成鳥の年生存率。repeatは記録上の最高年齢11年1か月11日(約11年)から最初の1年を引いた回数",
+      "surviveText": [
+        "軒下に泥の巣をつくり、ひなを育てた。",
+        "また春に、アフリカから帰ってきた。",
+        "今年も無事に渡りを終えた。"
+      ],
+      "dieText": [
+        "渡りの途中で力つきた。",
+        "寒い春に虫がとれず、弱ってしまった。",
+        "タカに見つかってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bto_swallow",
+      "title": "BTO BirdFacts: Swallow",
+      "publisher": "British Trust for Ornithology",
+      "url": "https://bto.org/learn/about-birds/birdfacts/swallow",
+      "values": "一腹卵数 平均4.55(典型4〜5)/幼鳥1年生存率0.395/成鳥年生存率0.374/最高記録年齢11年1か月11日/繁殖開始は通常1歳",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

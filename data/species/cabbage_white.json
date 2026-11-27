@@ -1,0 +1,103 @@
+{
+  "id": "cabbage_white",
+  "name": "モンシロチョウ",
+  "sci": "Pieris rapae crucivora",
+  "group": "昆虫",
+  "emoji": "🦋",
+  "dataRegion": "日本・北海道札幌市(北海道大学構内、1974年の夏の世代)",
+  "intro": "キャベツ畑や野原をひらひら飛ぶ、白いチョウ。",
+  "start": "卵",
+  "cohort": {
+    "size": 700,
+    "unit": "個",
+    "label": "1匹のお母さんが産む卵",
+    "src": [
+      "yamamoto1981_pieris"
+    ]
+  },
+  "stages": [
+    {
+      "label": "卵",
+      "years": 0.0135,
+      "survival": 0.458,
+      "src": [
+        "yamamoto1981_pieris"
+      ],
+      "estimated": true,
+      "note": "生命表(第2世代):卵891個のうち54.2%が死亡 → 生存率=1−0.542=0.458。期間は野外での卵期間4.92日",
+      "surviveText": [
+        "小さな青虫が、からを食べて出てきた。",
+        "葉のうらで、見つからずにすんだ。"
+      ],
+      "dieText": [
+        "小さな虫に食べられてしまった。",
+        "大雨で流されてしまった。"
+      ]
+    },
+    {
+      "label": "幼虫(青虫)",
+      "years": 0.0417,
+      "survival": 0.0588,
+      "src": [
+        "yamamoto1981_pieris"
+      ],
+      "estimated": true,
+      "note": "生命表(第2世代):1齢幼虫408匹のうち、さなぎになれたのは24匹 → 24÷408=0.0588。期間は1〜5齢の合計15.2日(20.14−4.92日)。5齢での寄生バチによる死亡が大きい",
+      "surviveText": [
+        "キャベツの葉をもりもり食べて大きくなった。",
+        "4回の脱皮をおえて、さなぎになる場所を見つけた。"
+      ],
+      "dieText": [
+        "ハチにねらわれてしまった。",
+        "鳥に見つかってしまった。",
+        "雨と寒さで力つきてしまった。"
+      ]
+    },
+    {
+      "label": "さなぎ",
+      "years": 0.031,
+      "survival": 0.0833,
+      "src": [
+        "yamamoto1981_pieris"
+      ],
+      "estimated": true,
+      "note": "生命表(第2世代):さなぎ24個のうち成虫になれたのは2匹(死亡率91.7%) → 2÷24=0.0833。期間は11.33日",
+      "surviveText": [
+        "羽化して、白いチョウになった。",
+        "かべのすみで、じっと見つからずにすんだ。"
+      ],
+      "dieText": [
+        "さなぎのまま、羽化できなかった。",
+        "鳥に見つかってしまった。"
+      ]
+    },
+    {
+      "label": "成虫(卵を産むまで)",
+      "years": 0.022,
+      "survival": 0.909,
+      "src": [
+        "yamamoto1981_pieris"
+      ],
+      "estimated": true,
+      "note": "同じ論文の第2世代メスの日ごとの生存数表(Table 22)で、羽化ごろ(32日目)の2.2から40日目の2.0へ → 2.0÷2.2=0.909。この約8日間が産卵の多い時期",
+      "surviveText": [
+        "花のみつをすって、たくさんの卵を産み、一生を終えた。",
+        "仲間と出会い、キャベツの葉に卵を産んで一生を終えた。"
+      ],
+      "dieText": [
+        "卵を産む前に、クモの巣にかかってしまった。",
+        "鳥に見つかってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "yamamoto1981_pieris",
+      "title": "Comparison of Population Dynamics of Two Pierid Butterflies, Pieris rapae crucivora and P. napi nesis, Living in the Same Area and Feeding on the Same Plant in Sapporo, Northern Japan (山本道也, 北海道大學理學部紀要 22(3): 202-249, 1981)",
+      "publisher": "北海道大学 (HUSCAP)",
+      "url": "https://eprints.lib.hokudai.ac.jp/repo/huscap/all/27663/22(3)_P202-249.pdf",
+      "values": "モンシロチョウ第2世代の生命表:卵891→1齢408(死亡率54.2%)→…→さなぎ24→成虫2(さなぎ死亡率91.7%)、総生存率0.22%(第1世代1.07%・第3世代1.13%)/野外の発育日数:卵4.92日・幼虫期の終わりまで20.14日・さなぎ11.33日/1匹の産卵数600〜800個/第2世代メスの日ごと生存数(1000匹あたり):32日目2.2、40日目2.0",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "green_veined_white",
+  "name": "エゾスジグロシロチョウ",
+  "sci": "Pieris napi nesis",
+  "group": "昆虫",
+  "emoji": "🦋",
+  "dataRegion": "日本・北海道札幌市(北海道大学構内、1974年の第1世代)",
+  "intro": "はねにうすい黒いすじがある、北国の白いチョウ。",
+  "start": "卵",
+  "cohort": {
+    "size": 300,
+    "unit": "個",
+    "label": "1匹のお母さんが産む卵",
+    "src": [
+      "yamamoto1981_pieris"
+    ]
+  },
+  "stages": [
+    {
+      "label": "卵",
+      "years": 0.022,
+      "survival": 0.734,
+      "src": [
+        "yamamoto1981_pieris"
+      ],
+      "estimated": true,
+      "note": "生命表(第1世代):卵64個のうち死亡率26.6% → 47÷64=0.734。期間は野外での卵期間7.95日",
+      "surviveText": [
+        "小さな青虫が生まれた。",
+        "草のかげで、見つからずにすんだ。"
+      ],
+      "dieText": [
+        "小さな虫に食べられてしまった。",
+        "雨に流されてしまった。"
+      ]
+    },
+    {
+      "label": "幼虫(青虫)",
+      "years": 0.069,
+      "survival": 0.298,
+      "src": [
+        "yamamoto1981_pieris"
+      ],
+      "estimated": true,
+      "note": "生命表(第1世代):1齢幼虫47匹のうち、さなぎになれたのは14匹 → 14÷47=0.298。期間は1〜5齢+前蛹の合計約25.3日(31.99−7.95+1.27日)",
+      "surviveText": [
+        "葉をたくさん食べて大きくなった。",
+        "脱皮をくりかえして、さなぎになる場所を見つけた。"
+      ],
+      "dieText": [
+        "ハチにねらわれてしまった。",
+        "鳥に見つかってしまった。",
+        "寒い日に力つきてしまった。"
+      ]
+    },
+    {
+      "label": "さなぎ",
+      "years": 0.034,
+      "survival": 0.643,
+      "src": [
+        "yamamoto1981_pieris"
+      ],
+      "estimated": true,
+      "note": "生命表(第1世代):さなぎ14個のうち成虫になれたのは9匹(死亡率35.7%) → 9÷14=0.643。期間は12.56日。成虫になって飛び立つところでゲーム終了(成虫の生存データは無し)",
+      "surviveText": [
+        "羽化して、白いチョウになって飛び立った。",
+        "草のしげみで、見つからずにすんだ。"
+      ],
+      "dieText": [
+        "さなぎのまま、羽化できなかった。",
+        "鳥に見つかってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "yamamoto1981_pieris",
+      "title": "Comparison of Population Dynamics of Two Pierid Butterflies, Pieris rapae crucivora and P. napi nesis, Living in the Same Area and Feeding on the Same Plant in Sapporo, Northern Japan (山本道也, 北海道大學理學部紀要 22(3): 202-249, 1981)",
+      "publisher": "北海道大学 (HUSCAP)",
+      "url": "https://eprints.lib.hokudai.ac.jp/repo/huscap/all/27663/22(3)_P202-249.pdf",
+      "values": "エゾスジグロシロチョウ第1世代の生命表:卵64→1齢47(死亡率26.6%)→5齢31→さなぎ14(5齢死亡率54.8%)→成虫9(さなぎ死亡率35.7%)、総生存率14.06%/野外の発育日数:卵7.95日・幼虫期の終わりまで31.99日・前蛹1.27日・さなぎ12.56日/1匹の産卵数200〜400個",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

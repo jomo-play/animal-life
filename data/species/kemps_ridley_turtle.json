@@ -1,0 +1,152 @@
+{
+  "id": "kemps_ridley_turtle",
+  "name": "ケンプヒメウミガメ",
+  "sci": "Lepidochelys kempii",
+  "group": "爬虫類",
+  "emoji": "🐢",
+  "dataRegion": "メキシコ湾(メキシコ・ランチョヌエボ周辺の砂浜)",
+  "intro": "世界でいちばん小さなウミガメ。昼間にみんなで砂浜へやってきて卵を産む。",
+  "start": "卵",
+  "cohort": {
+    "size": 97,
+    "unit": "個",
+    "label": "同じ巣の卵",
+    "src": [
+      "kemp_plan2011"
+    ]
+  },
+  "stages": [
+    {
+      "label": "巣の中(卵から砂の上に出るまで)",
+      "years": 0.15,
+      "survival": 0.801,
+      "src": [
+        "kemp_plan2011",
+        "noaa_kemp"
+      ],
+      "estimated": false,
+      "note": "自然の巣(3,000巣以上、2007年)で子ガメが出てきた割合80.1%。期間はNOAAの「50〜60日」",
+      "surviveText": [
+        "砂の中で卵がかえった。",
+        "きょうだいと一緒に砂の上へ出た。"
+      ],
+      "dieText": [
+        "卵がかえらなかった。",
+        "巣がほかの動物にほり返されてしまった。"
+      ]
+    },
+    {
+      "label": "砂浜から海へ",
+      "years": 0.01,
+      "survival": 0.664,
+      "src": [
+        "kemp_plan2011"
+      ],
+      "estimated": false,
+      "note": "自然の巣から出た子ガメが海にたどりついた割合66.4%(163巣を観察)",
+      "surviveText": [
+        "砂浜を走って海にたどりついた。",
+        "最初の波をこえた。"
+      ],
+      "dieText": [
+        "カモメに見つかってしまった。",
+        "カニに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "海をただよう赤ちゃんガメ(0〜1歳)",
+      "years": 1,
+      "repeat": 2,
+      "survival": 0.318,
+      "src": [
+        "kemp_plan2011"
+      ],
+      "estimated": false,
+      "note": "ふ化個体と外洋期の年生存率0.318。次の区分が2歳からなので0〜1歳の2年分(repeat=2)とした",
+      "surviveText": [
+        "流れ藻の中にかくれて育った。",
+        "小さな生き物を食べて大きくなった。"
+      ],
+      "dieText": [
+        "大きな魚に食べられてしまった。",
+        "嵐の海で力つきた。"
+      ]
+    },
+    {
+      "label": "小さな子ガメ(2〜5歳)",
+      "years": 1,
+      "repeat": 4,
+      "survival": 0.815,
+      "src": [
+        "kemp_plan2011"
+      ],
+      "estimated": false,
+      "note": "2〜5歳の年生存率0.815(1997年以降の値)。4年分",
+      "surviveText": [
+        "岸近くの浅い海でカニを食べた。",
+        "こうらが少しかたくなった。"
+      ],
+      "dieText": [
+        "サメに見つかってしまった。",
+        "漁の網にからまってしまった。"
+      ]
+    },
+    {
+      "label": "大きな子ガメ(6〜11歳)",
+      "years": 1,
+      "repeat": 6,
+      "survival": 0.935,
+      "src": [
+        "kemp_plan2011"
+      ],
+      "estimated": false,
+      "note": "6〜11歳の年生存率0.935(1997年以降の値)。6年分",
+      "surviveText": [
+        "湾の中をのびのびと泳いだ。",
+        "また1年、元気にすごした。"
+      ],
+      "dieText": [
+        "漁の網にからまってしまった。",
+        "寒い冬に動けなくなってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 18,
+      "survival": 0.935,
+      "src": [
+        "kemp_plan2011",
+        "noaa_kemp"
+      ],
+      "estimated": false,
+      "note": "12歳以上の年生存率0.935(1997年以降の値)。repeatはNOAAの寿命「30年以上」から12歳を引いた18回。参考: この表で卵から12歳まで生きる割合は約1.6%",
+      "surviveText": [
+        "仲間と一緒に砂浜へ行き、卵を産んだ。",
+        "また1年、海で元気にすごした。"
+      ],
+      "dieText": [
+        "年をとって静かに力つきた。",
+        "漁の網にからまってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "kemp_plan2011",
+      "title": "Bi-National Recovery Plan for the Kemp's Ridley Sea Turtle, Second Revision (2011)",
+      "publisher": "NMFS, USFWS, SEMARNAT",
+      "url": "https://ecos.fws.gov/docs/recovery_plan/kempsridley_revision2_with%20signature.pdf",
+      "values": "1巣あたり平均97個/自然の巣から出てくる割合80.1%/出た子ガメが海に着く割合66.4%/年生存率(1997年以降): ふ化個体・外洋期0.318、2〜5歳0.815、6〜11歳0.935、12歳以上0.935/成熟12歳(モデル)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "noaa_kemp",
+      "title": "Kemp's Ridley Turtle",
+      "publisher": "NOAA Fisheries",
+      "url": "https://www.fisheries.noaa.gov/species/kemps-ridley-turtle",
+      "values": "1巣に約100個の卵、50〜60日で卵がかえる/約13歳でおとな/寿命は30年以上と推定",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

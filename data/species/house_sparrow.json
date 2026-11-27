@@ -1,0 +1,44 @@
+{
+  "id": "house_sparrow",
+  "name": "イエスズメ",
+  "sci": "Passer domesticus",
+  "group": "鳥類",
+  "emoji": "🐦",
+  "dataRegion": "イギリス",
+  "intro": "人の町のそばで暮らす小さな鳥。世界中に広がっている。",
+  "start": "巣立ちの日",
+  "cohort": { "size": 4, "unit": "羽", "label": "同じ巣のきょうだい", "src": ["bto_house_sparrow"] },
+  "stages": [
+    {
+      "label": "巣立ちから最初の1年",
+      "years": 1,
+      "survival": 0.489,
+      "src": ["bto_house_sparrow"],
+      "estimated": false,
+      "note": "BTOの足環調査による幼鳥(1年目)の生存率",
+      "surviveText": ["初めての冬をこえた。", "仲間の群れについて行き、えさ場を覚えた。"],
+      "dieText": ["初めての冬をこえられなかった。", "タカに見つかってしまった。"]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 11,
+      "survival": 0.571,
+      "src": ["bto_house_sparrow"],
+      "estimated": false,
+      "note": "成鳥の年生存率。repeatは記録上の最高年齢12年から最初の1年を引いた回数",
+      "surviveText": ["巣をつくり、ひなを育てた。", "また春をむかえた。"],
+      "dieText": ["寒い冬に力つきた。", "ネコに見つかってしまった。"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bto_house_sparrow",
+      "title": "BTO BirdFacts: House Sparrow",
+      "publisher": "British Trust for Ornithology",
+      "url": "https://bto.org/learn/about-birds/birdfacts/house-sparrow",
+      "values": "一腹卵数 平均4.15(典型4〜5)/幼鳥1年生存率0.489/成鳥年生存率0.571/最高記録年齢12年12日",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

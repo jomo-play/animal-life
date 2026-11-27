@@ -1,0 +1,68 @@
+{
+  "id": "eurasian_wren",
+  "name": "ミソサザイ",
+  "sci": "Troglodytes troglodytes",
+  "group": "鳥類",
+  "emoji": "🐦",
+  "dataRegion": "イギリス",
+  "intro": "とても小さいのに、体に似合わない大きな声で歌う鳥。",
+  "start": "巣立ちの日",
+  "cohort": {
+    "size": 6,
+    "unit": "羽",
+    "label": "同じ巣のきょうだい",
+    "src": [
+      "bto_wren"
+    ]
+  },
+  "stages": [
+    {
+      "label": "巣立ちから最初の1年",
+      "years": 1,
+      "survival": 0.263,
+      "src": [
+        "bto_wren"
+      ],
+      "estimated": false,
+      "note": "BTOの足環調査による幼鳥(1年目)の生存率",
+      "surviveText": [
+        "やぶの中で虫をさがすのが上手になった。",
+        "寒い夜は仲間と身を寄せ合ってすごした。"
+      ],
+      "dieText": [
+        "初めての冬の寒さをこえられなかった。",
+        "ネコに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 6,
+      "survival": 0.319,
+      "src": [
+        "bto_wren"
+      ],
+      "estimated": false,
+      "note": "成鳥の年生存率。repeatは記録上の最高年齢7年3か月から最初の1年を引いた回数",
+      "surviveText": [
+        "大きな声で歌い、巣をつくった。",
+        "ひなを育てた。"
+      ],
+      "dieText": [
+        "寒い冬に力つきた。",
+        "タカに見つかってしまった。"
+      ]
+    }
+  ],
+  "maxAgeBasis": "野生の記録(足環)",
+  "sources": [
+    {
+      "id": "bto_wren",
+      "title": "BTO BirdFacts: Wren",
+      "publisher": "British Trust for Ornithology",
+      "url": "https://bto.org/learn/about-birds/birdfacts/wren",
+      "values": "一腹卵数 平均5.7(典型5〜6)/幼鳥1年生存率0.263/成鳥年生存率0.319/最高記録年齢7年3か月6日",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

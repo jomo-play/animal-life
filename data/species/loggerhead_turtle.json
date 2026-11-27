@@ -1,0 +1,162 @@
+{
+  "id": "loggerhead_turtle",
+  "name": "アカウミガメ",
+  "sci": "Caretta caretta",
+  "group": "爬虫類",
+  "emoji": "🐢",
+  "dataRegion": "北西大西洋(アメリカ南東部の砂浜)",
+  "intro": "砂浜で生まれ、広い海を旅して大きくなるウミガメ。",
+  "start": "卵",
+  "cohort": {
+    "size": 100,
+    "unit": "個",
+    "label": "同じ巣の卵",
+    "src": [
+      "noaa_loggerhead"
+    ]
+  },
+  "stages": [
+    {
+      "label": "巣の中(卵から砂の上に出るまで)",
+      "years": 0.17,
+      "survival": 0.54,
+      "src": [
+        "arendt2013"
+      ],
+      "estimated": false,
+      "note": "卵からふ化して砂の上に出てくる割合(hatchling emergence)54%。期間はNOAAの「約2か月」",
+      "surviveText": [
+        "砂の中で卵がかえった。",
+        "きょうだいと一緒に砂の上へ出た。"
+      ],
+      "dieText": [
+        "卵がかえらなかった。",
+        "巣が大波をかぶってしまった。"
+      ]
+    },
+    {
+      "label": "砂浜から海へ",
+      "years": 0.01,
+      "survival": 0.7,
+      "src": [
+        "arendt2013"
+      ],
+      "estimated": false,
+      "note": "ふ化直後に海へ向かう間の生存率(hatchling frenzy)70%。論文著者の推定値",
+      "surviveText": [
+        "夜の砂浜を走って海にたどりついた。",
+        "波に乗って沖へ泳ぎだした。"
+      ],
+      "dieText": [
+        "カニに見つかってしまった。",
+        "明かりにまよって海に着けなかった。"
+      ]
+    },
+    {
+      "label": "海での最初の1年",
+      "years": 1,
+      "survival": 0.4,
+      "src": [
+        "arendt2013"
+      ],
+      "estimated": false,
+      "note": "0歳の海での生存率40%(Conant et al. 2009の値を引用)",
+      "surviveText": [
+        "流れ藻の中にかくれて育った。",
+        "小さなエビを食べて大きくなった。"
+      ],
+      "dieText": [
+        "大きな魚に食べられてしまった。",
+        "嵐の海で力つきた。"
+      ]
+    },
+    {
+      "label": "子ガメ(1〜10歳)",
+      "years": 1,
+      "repeat": 10,
+      "survival": 0.794,
+      "src": [
+        "arendt2013"
+      ],
+      "estimated": false,
+      "note": "1〜10歳の年生存率79.4%。repeat=10年",
+      "surviveText": [
+        "大海原をわたって旅を続けた。",
+        "こうらが少しかたくなった。"
+      ],
+      "dieText": [
+        "サメに見つかってしまった。",
+        "漁の網にからまってしまった。"
+      ]
+    },
+    {
+      "label": "若いカメ(11〜29歳)",
+      "years": 1,
+      "repeat": 19,
+      "survival": 0.893,
+      "src": [
+        "arendt2013"
+      ],
+      "estimated": false,
+      "note": "11〜29歳の年生存率89.3%。repeat=19年",
+      "surviveText": [
+        "浅い海に移り、貝をたくさん食べた。",
+        "また1年、海で元気にすごした。"
+      ],
+      "dieText": [
+        "漁の網にからまってしまった。",
+        "大きなサメに出会ってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 50,
+      "survival": 0.95,
+      "src": [
+        "arendt2013",
+        "noaa_loggerhead"
+      ],
+      "estimated": false,
+      "note": "31年目以降の年生存率95%。repeatはNOAAの寿命「80年以上」から30歳を引いた50回。",
+      "surviveText": [
+        "生まれた砂浜にもどって卵を産んだ。",
+        "また1年、海を旅した。"
+      ],
+      "dieText": [
+        "年をとって静かに力つきた。",
+        "船とぶつかってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "arendt2013",
+      "title": "Historical versus Contemporary Climate Forcing on the Annual Nesting Variability of Loggerhead Sea Turtles in the Northwest Atlantic Ocean (Arendt et al. 2013, PLoS ONE)",
+      "publisher": "PLoS ONE / PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3855202",
+      "values": "ふ化して巣から出る割合54%/海へたどりつく割合70%/0歳の生存率40%/1〜10歳の年生存率79.4%/11〜29歳の年生存率89.3%/31年目以降の年生存率95%",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "noaa_loggerhead",
+      "title": "Loggerhead Turtle",
+      "publisher": "NOAA Fisheries",
+      "url": "https://www.fisheries.noaa.gov/species/loggerhead-turtle",
+      "values": "1つの巣に約100個の卵/約2か月で卵がかえる/メスは約35歳でおとな/80年以上生きることがある",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "noaa_os_turtles",
+      "title": "Sea turtles (Ocean Service news, June 2015)",
+      "publisher": "NOAA Ocean Service",
+      "url": "https://oceanservice.noaa.gov/news/june15/sea-turtles.html",
+      "values": "おとなまで生きるのは1,000分の1〜10,000分の1(参考値、ゲームの計算には未使用)",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "caveats": [
+    "この表で計算すると、卵からおとな(約30〜35歳)まで生きるのは約570〜740分の1(30歳まで約1/570、35歳まで約1/737)で、NOAA海洋局の「1,000〜10,000分の1」より少し多い。",
+    "ずれる理由: NOAA海洋局の値はウミガメ全般についての大まかな幅で、種や調査地を限らない。ゲームの値は北西大西洋のアカウミガメの評価(Conant et al. 2009)を引いた Arendt et al. 2013 のもので、砂浜から海へたどりつく割合70%は論文著者の推定値。どちらも実在の資料の値なので、作り変えずにそのまま使っている。"
+  ]
+}

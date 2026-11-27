@@ -1,0 +1,151 @@
+{
+  "id": "american_alligator",
+  "name": "アメリカアリゲーター",
+  "sci": "Alligator mississippiensis",
+  "group": "爬虫類",
+  "emoji": "🐊",
+  "dataRegion": "アメリカ・フロリダ州オレンジ湖",
+  "intro": "アメリカ南部の湖や沼にすむ大きなワニ。お母さんが子どもを守る。",
+  "start": "卵",
+  "cohort": {
+    "size": 33,
+    "unit": "個",
+    "label": "同じ巣の卵",
+    "src": [
+      "crawford_ipm"
+    ]
+  },
+  "stages": [
+    {
+      "label": "巣の中(卵がかえるまで)",
+      "years": 0.18,
+      "survival": 0.396,
+      "src": [
+        "crawford_ipm"
+      ],
+      "estimated": true,
+      "note": "巣が最後まで残る確率0.452 × 卵が元気な子になる確率0.875 = 約0.396(計算値)。期間は資料の「約65日」",
+      "surviveText": [
+        "お母さんが巣を守ってくれた。",
+        "卵の中から鳴き声を出すと、お母さんが巣をあけてくれた。"
+      ],
+      "dieText": [
+        "巣が水につかってしまった。",
+        "アライグマに巣をほり返されてしまった。"
+      ]
+    },
+    {
+      "label": "最初の1年",
+      "years": 1,
+      "survival": 0.411,
+      "src": [
+        "woodward1987",
+        "crawford_ipm"
+      ],
+      "estimated": false,
+      "note": "ふ化後12か月の生存率41%(ジョリー・セーバー法、1979〜1984年の標識調査)",
+      "surviveText": [
+        "きょうだいとかたまって、お母さんのそばですごした。",
+        "小さな虫や魚をつかまえた。"
+      ],
+      "dieText": [
+        "サギに見つかってしまった。",
+        "大きなワニに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "子どものワニ(体長30〜122cm)",
+      "years": 1,
+      "repeat": 5,
+      "survival": 0.843,
+      "src": [
+        "crawford_ipm"
+      ],
+      "estimated": false,
+      "note": "年生存率0.843(Rice & Percival 1995の値)。122cmに届く年齢は資料で確かめられなかったため、1〜14歳の13年を子ども5年・若者8年に仮に分けた",
+      "surviveText": [
+        "岸の草かげで魚をとった。",
+        "体が少しずつ大きくなった。"
+      ],
+      "dieText": [
+        "大きなワニに見つかってしまった。",
+        "日照りで池が干上がってしまった。"
+      ]
+    },
+    {
+      "label": "若いワニ(体長122〜183cm)",
+      "years": 1,
+      "repeat": 8,
+      "survival": 0.8552,
+      "src": [
+        "crawford_ipm",
+        "icwdm_alligator"
+      ],
+      "estimated": false,
+      "note": "年生存率0.8552(Rice & Percival 1995の値)。フロリダでは体長6フィート(約183cm)まで約14年かかる",
+      "surviveText": [
+        "自分のなわばりを見つけた。",
+        "寒い冬を水の中でじっとこえた。"
+      ],
+      "dieText": [
+        "大きなワニとのけんかに負けてしまった。",
+        "狩りでつかまってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 63,
+      "survival": 0.9057,
+      "src": [
+        "crawford_ipm",
+        "anage_alligator"
+      ],
+      "estimated": false,
+      "note": "おとなの年生存率0.9057(Rice & Percival 1995の値)。repeatはAnAgeの最高寿命77年(飼育下)から14歳を引いた63回。参考: この表で卵から14歳まで生きる割合は約2.0%",
+      "surviveText": [
+        "子どもたちを守り育てた。",
+        "日なたぼっこをして、また1年をすごした。"
+      ],
+      "dieText": [
+        "年をとって静かに力つきた。",
+        "大きなワニとのけんかに負けてしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "woodward1987",
+      "title": "Survival of young American alligators on a Florida lake (Woodward et al. 1987, Journal of Wildlife Management)",
+      "publisher": "USGS",
+      "url": "https://www.usgs.gov/publications/survival-young-american-alligators-florida-lake",
+      "values": "ふ化個体の生存率: 6か月76%、12か月41%(オレンジ湖、1979〜1984年)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "crawford_ipm",
+      "title": "Towards a decision-making culture in wildlife management (Crawford, T. G., PhD dissertation, University of Georgia)",
+      "publisher": "University of Georgia",
+      "url": "https://openscholar.uga.edu/record/3104/files/CrawfordTaraPhD.pdf",
+      "values": "オレンジ湖の値: 平均卵数33(32.8)/巣が残る確率0.452/卵が子になる確率0.875/年生存率: ふ化個体0.411、子ども(30〜122cm)0.843、若者(122〜183cm)0.8552、おとな(183〜274cm)0.9057/卵は約65日でかえる",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "icwdm_alligator",
+      "title": "Alligators (Woodward & David, Prevention and Control of Wildlife Damage 1994)",
+      "publisher": "Internet Center for Wildlife Damage Management",
+      "url": "https://icwdm.org/?p=1990",
+      "values": "体長6フィートに届くまで: ルイジアナで最大10年、フロリダで14年、ノースカロライナで16年",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_alligator",
+      "title": "AnAge entry for Alligator mississippiensis",
+      "publisher": "Human Ageing Genomic Resources",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Alligator_mississippiensis",
+      "values": "最高寿命77年(飼育下)/性成熟4,380日(約12年)",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "maxAgeBasis": "飼育下の記録"
+}

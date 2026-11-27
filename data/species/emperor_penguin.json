@@ -1,0 +1,109 @@
+{
+  "id": "emperor_penguin",
+  "name": "コウテイペンギン",
+  "sci": "Aptenodytes forsteri",
+  "group": "鳥類",
+  "emoji": "🐧",
+  "dataRegion": "南極(テール・アデリー、ポワント・ジェオロジー)",
+  "intro": "南極のきびしい冬に子育てをする、いちばん大きなペンギン。",
+  "start": "卵",
+  "cohort": {
+    "size": 1,
+    "unit": "羽",
+    "label": "卵は1つだけ",
+    "src": [
+      "adw_emperor_penguin"
+    ]
+  },
+  "stages": [
+    {
+      "label": "卵からひとり立ちまで",
+      "years": 0.6,
+      "survival": 0.458,
+      "src": [
+        "abadi2017",
+        "adw_emperor_penguin"
+      ],
+      "estimated": false,
+      "note": "生存率は論文の繁殖成功(卵が巣立ちヒナになる割合)の平均0.458。yearsはADWの抱卵約65日+ひとり立ちまで約5か月から計算(0.18+0.42年)",
+      "surviveText": [
+        "お父さんの足の上で、ブリザードの冬をこえて生まれた。",
+        "ヒナどうしで集まって、寒さをしのいだ。",
+        "ふわふわの羽が生えかわり、海へ向かった。"
+      ],
+      "dieText": [
+        "卵が氷の上に落ちて、冷えてしまった。",
+        "親がえさを持って帰るのが間に合わなかった。",
+        "ブリザードの寒さをこえられなかった。"
+      ]
+    },
+    {
+      "label": "ひとり立ちから最初の1年",
+      "years": 1,
+      "survival": 0.401,
+      "src": [
+        "abadi2017"
+      ],
+      "estimated": false,
+      "note": "論文の幼鳥生存率(巣立ちから1歳まで)の平均0.401(年ごとの変動が大きい)",
+      "surviveText": [
+        "遠い北の海まで泳ぎ、魚をとれるようになった。",
+        "氷のふちにもどってきた。",
+        "初めての1年を生きぬいた。"
+      ],
+      "dieText": [
+        "ヒョウアザラシに見つかってしまった。",
+        "えさが見つからず、弱ってしまった。",
+        "シャチに見つかってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 48,
+      "survival": 0.907,
+      "src": [
+        "abadi2017",
+        "adw_emperor_penguin"
+      ],
+      "estimated": false,
+      "note": "論文の成鳥(1歳以上)の年生存率0.907。最高年齢は信頼できる記録がなく(AnAgeは未確定)、ADWの「最長50年(到達は約1%)」を使用。repeatは50から最初の約1.6年を引いて丸めた数",
+      "surviveText": [
+        "氷の上でつがいと出会い、卵を受けついだ。",
+        "深くもぐって、たくさん魚をとった。",
+        "また南極の冬をこえた。"
+      ],
+      "dieText": [
+        "ヒョウアザラシに見つかってしまった。",
+        "海氷が少ない年に、えさがとれなかった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "abadi2017",
+      "title": "Integrated population modeling reveals the impact of climate on the survival of juvenile emperor penguins (Abadi, Barbraud & Gimenez 2017, Global Change Biology, doi:10.1111/gcb.13538)",
+      "publisher": "Global Change Biology(著者公開PDF)",
+      "url": "https://oliviergimenez.github.io/pubs/abadi2016.pdf",
+      "values": "調査地 ポワント・ジェオロジー(テール・アデリー)、解析期間1971〜1998年/幼鳥生存率(巣立ち〜1歳)平均0.401/成鳥生存率0.907/繁殖成功(卵が巣立ちヒナになる割合)平均0.458",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "adw_emperor_penguin",
+      "title": "Animal Diversity Web: Aptenodytes forsteri",
+      "publisher": "University of Michigan Museum of Zoology",
+      "url": "https://animaldiversity.org/accounts/Aptenodytes_forsteri/",
+      "values": "1繁殖期に卵1個/抱卵約65日/約5か月でひとり立ち/野生の寿命15〜20年/最長50年まで生きた例があるとされる(約1%)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_emperor_penguin",
+      "title": "AnAge: Aptenodytes forsteri",
+      "publisher": "Human Ageing Genomic Resources",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Aptenodytes_forsteri",
+      "values": "最高寿命は未確定(詳しい研究なし、40年以上は逸話的)",
+      "accessed": "2026-11-20"
+    }
+  ],
+  "maxAgeBasis": "参考値(確かな記録なし)"
+}

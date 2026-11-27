@@ -1,0 +1,79 @@
+{
+  "id": "meerkat",
+  "name": "ミーアキャット",
+  "sci": "Suricata suricatta",
+  "group": "哺乳類",
+  "emoji": "🐾",
+  "dataRegion": "南アフリカ・カラハリ砂漠南部",
+  "intro": "後ろ足で立って見はりをする、砂漠の家族思いの動物。",
+  "start": "巣穴から初めて外に出た日",
+  "cohort": {
+    "size": 4,
+    "unit": "匹",
+    "label": "同じ巣穴のきょうだい",
+    "src": [
+      "clutton_brock_1999_meerkat"
+    ]
+  },
+  "stages": [
+    {
+      "label": "子ども(最初の1年)",
+      "years": 1,
+      "survival": 0.2,
+      "src": [
+        "clutton_brock_1999_meerkat"
+      ],
+      "estimated": false,
+      "note": "子どもの年生存率0.20",
+      "surviveText": [
+        "お兄さんお姉さんからサソリをもらった。",
+        "見はり役の声で、すぐ巣穴にかくれた。"
+      ],
+      "dieText": [
+        "タカに見つかってしまった。",
+        "日照りで食べ物が足りなかった。",
+        "暑さに力つきた。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 14,
+      "survival": 0.43,
+      "src": [
+        "clutton_brock_1999_meerkat",
+        "anage_meerkat"
+      ],
+      "estimated": false,
+      "note": "1歳以上の年生存率0.43。repeatは野生での推定最高寿命15年から1歳を引いた回数",
+      "surviveText": [
+        "見はり役をりっぱにこなした。",
+        "弟や妹の世話をした。",
+        "雨のあと、虫がたくさん出てきた。"
+      ],
+      "dieText": [
+        "ジャッカルに見つかってしまった。",
+        "日照りの年をこえられなかった。",
+        "となりの群れとのあらそいに負けた。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "clutton_brock_1999_meerkat",
+      "title": "Reproduction and survival of suricates (Suricata suricatta) in the southern Kalahari",
+      "publisher": "African Journal of Ecology 37(1) (Clutton-Brock et al. 1999) / FAO AGRIS",
+      "url": "https://agris.fao.org/search/en/records/65df47427c7033e84bed36d2",
+      "values": "【要旨で確認】年生存率 子ども0.20・1歳以上0.43/巣穴から出たときの一腹子数3〜5匹(中央の4匹を使用)",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "anage_meerkat",
+      "title": "AnAge entry for Suricata suricatta",
+      "publisher": "Human Ageing Genomic Resources (AnAge)",
+      "url": "https://genomics.senescence.info/species/entry.php?species=Suricata_suricatta",
+      "values": "野生での推定最高寿命15年(飼育下20.6年)",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "pink_salmon",
+  "name": "カラフトマス",
+  "sci": "Oncorhynchus gorbuscha",
+  "group": "魚類",
+  "emoji": "🐟",
+  "dataRegion": "アラスカ・北太平洋",
+  "intro": "生まれてすぐ海へ向かい、2年で一生を終える短い命のサケ。",
+  "start": "卵",
+  "cohort": {
+    "size": 1850,
+    "unit": "個",
+    "label": "同じお母さんの卵",
+    "src": [
+      "mcneil1975"
+    ],
+    "estimated": true,
+    "note": "McNeil & Bailey 1975 のカラフトマスの卵数1,400〜2,300個の中央。参考: アラスカ州の種のページでは1,200〜1,900個"
+  },
+  "stages": [
+    {
+      "label": "砂利の中(卵から稚魚が出てくるまで)",
+      "years": 0.5,
+      "survival": 0.125,
+      "src": [
+        "mcneil1975",
+        "adfg_pink"
+      ],
+      "estimated": true,
+      "note": "自然の川では卵の5〜20%が稚魚になる(サケ類全般の値)。幅の中央の12.5%を使用。期間はADF&Gの「5〜8か月」から約0.5年",
+      "surviveText": [
+        "冬のあいだ砂利の中で育った。",
+        "春に砂利から出て、すぐ海へ向かった。"
+      ],
+      "dieText": [
+        "大水で卵が流されてしまった。",
+        "川の水が凍ってしまった。"
+      ]
+    },
+    {
+      "label": "海で育ち、ふるさとの川へ帰るまで",
+      "years": 1.5,
+      "survival": 0.03,
+      "src": [
+        "mcneil1975",
+        "adfg_pink"
+      ],
+      "estimated": true,
+      "note": "稚魚で海に入るカラフトマスとシロザケの海での生存率は1〜5%。幅の中央の3%を使用。海ですごす期間は18か月。カラフトマスは産卵後に一生を終えるため、ここで終わる",
+      "surviveText": [
+        "生まれた川に帰り、卵を産んで一生をやりとげた。",
+        "背中を盛り上げた姿で川をのぼり、卵を産んだ。"
+      ],
+      "dieText": [
+        "大きな魚に食べられてしまった。",
+        "海鳥に見つかってしまった。",
+        "漁の網にかかってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "mcneil1975",
+      "title": "Salmon Rancher's Manual (McNeil & Bailey 1975)",
+      "publisher": "NOAA NMFS Auke Bay Fisheries Laboratory",
+      "url": "https://apps-afsc.fisheries.noaa.gov/Publications/ProcRpt/PR1975_McNeil_Salmon.pdf",
+      "values": "自然では卵の5〜20%しか稚魚にならない/海での生存率はカラフトマス・シロザケで1〜5%/カラフトマスの平均卵数1,400〜2,300個",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "adfg_pink",
+      "title": "Pink Salmon Species Profile",
+      "publisher": "Alaska Department of Fish and Game",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=pinksalmon.main",
+      "values": "メス1匹が1,200〜1,900個の卵を産む/卵は冬に5〜8か月かけて育つ/海で18か月すごしておとなになる/2年で一生を終える",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

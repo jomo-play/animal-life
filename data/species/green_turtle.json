@@ -1,0 +1,134 @@
+{
+  "id": "green_turtle",
+  "name": "アオウミガメ",
+  "sci": "Chelonia mydas",
+  "group": "爬虫類",
+  "emoji": "🐢",
+  "dataRegion": "ハワイ",
+  "intro": "おとなになると海草を食べて暮らす、おだやかなウミガメ。",
+  "start": "ふ化した日",
+  "cohort": {
+    "size": 110,
+    "unit": "匹",
+    "label": "同じ巣のきょうだい",
+    "src": [
+      "noaa_green"
+    ]
+  },
+  "stages": [
+    {
+      "label": "赤ちゃんガメ(0〜1歳)",
+      "years": 1,
+      "repeat": 2,
+      "survival": 0.35,
+      "src": [
+        "piacenza2019"
+      ],
+      "estimated": false,
+      "note": "ふ化個体(hatchling)の年生存率0.350。論文の区分は0〜1歳なので2年分(repeat=2)とした。巣の中の卵の生存率は示されていないため、ふ化した日から始める",
+      "surviveText": [
+        "流れ藻にかくれて大海原をただよった。",
+        "小さな生き物を食べて育った。"
+      ],
+      "dieText": [
+        "大きな魚に食べられてしまった。",
+        "鳥に見つかってしまった。"
+      ]
+    },
+    {
+      "label": "沖をただよう子ガメ(2〜3歳)",
+      "years": 1,
+      "repeat": 2,
+      "survival": 0.8,
+      "src": [
+        "piacenza2019"
+      ],
+      "estimated": false,
+      "note": "外洋期の幼体(pelagic juvenile)の年生存率0.800。2〜3歳の2年分",
+      "surviveText": [
+        "こうらが少し大きくなった。",
+        "あたたかい海流に乗って旅をした。"
+      ],
+      "dieText": [
+        "サメに見つかってしまった。",
+        "ごみを飲みこんで弱ってしまった。"
+      ]
+    },
+    {
+      "label": "岸近くの子ガメ(4〜11歳)",
+      "years": 1,
+      "repeat": 8,
+      "survival": 0.824,
+      "src": [
+        "piacenza2019"
+      ],
+      "estimated": false,
+      "note": "沿岸期の幼体(neritic juvenile)の年生存率0.824。4〜11歳の8年分",
+      "surviveText": [
+        "浅い海で海草を食べはじめた。",
+        "岩のすきまでぐっすり眠った。"
+      ],
+      "dieText": [
+        "サメに見つかってしまった。",
+        "漁の網にからまってしまった。"
+      ]
+    },
+    {
+      "label": "若いカメ(12〜29歳)",
+      "years": 1,
+      "repeat": 18,
+      "survival": 0.876,
+      "src": [
+        "piacenza2019"
+      ],
+      "estimated": false,
+      "note": "亜成体(subadult)の年生存率0.876。成熟年齢30歳(論文の値)までの18年分",
+      "surviveText": [
+        "海草の原っぱでゆっくり育った。",
+        "また1年、元気にすごした。"
+      ],
+      "dieText": [
+        "病気になって弱ってしまった。",
+        "船とぶつかってしまった。"
+      ]
+    },
+    {
+      "label": "おとな",
+      "years": 1,
+      "repeat": 40,
+      "survival": 0.929,
+      "src": [
+        "piacenza2019",
+        "noaa_green"
+      ],
+      "estimated": false,
+      "note": "おとなの年生存率0.929(ハワイでの29年間の標識調査に基づく)。repeatはNOAAの寿命「70年以上」から30歳を引いた40回。参考: この表でふ化から30歳まで生きる割合は約0.15%(約650分の1)",
+      "surviveText": [
+        "生まれた砂浜にもどって卵を産んだ。",
+        "海草をたっぷり食べて1年をすごした。"
+      ],
+      "dieText": [
+        "年をとって静かに力つきた。",
+        "病気になって弱ってしまった。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "piacenza2019",
+      "title": "Fathoming sea turtles: monitoring strategy evaluation to improve conservation status assessments (Piacenza, Richards & Heppell 2019, Ecological Applications)",
+      "publisher": "Ecological Applications / PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6851787/",
+      "values": "年生存率: ふ化個体0.350/外洋期の幼体0.800/沿岸期の幼体0.824/亜成体0.876/おとな0.929。区分: ふ化個体0〜1歳、外洋期2〜3歳、沿岸期4〜11歳、亜成体12歳〜成熟。成熟年齢30(17〜41)歳",
+      "accessed": "2026-11-20"
+    },
+    {
+      "id": "noaa_green",
+      "title": "Green Turtle",
+      "publisher": "NOAA Fisheries",
+      "url": "https://www.fisheries.noaa.gov/species/green-turtle",
+      "values": "1つの巣に約110個の卵/メスは25〜35歳でおとな/少なくとも70年以上生きる",
+      "accessed": "2026-11-20"
+    }
+  ]
+}

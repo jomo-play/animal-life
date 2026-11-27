@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>いのちのサイコロ(仮)</title>
+<meta name="description" content="どの生き物に生まれるかはランダム。生きのびる確率は本物の調査データ。動物の一生シミュレーション。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main id="app">
+
+  <!-- タイトル -->
+  <section id="screen-title" class="screen active">
+    <div class="title-wrap">
+      <div class="title-emoji" aria-hidden="true">🥚</div>
+      <h1>いのちのサイコロ</h1>
+      <p class="lead">どの生き物に生まれるかは、運しだい。<br>生きのびる確率は、本物の調査データ。</p>
+      <button id="btn-start" class="btn primary">生まれる</button>
+      <button id="btn-sources" class="btn ghost">データの出典</button>
+      <p class="seen" id="seen-count"></p>
+    </div>
+  </section>
+
+  <!-- 誕生 -->
+  <section id="screen-birth" class="screen">
+    <div class="card birth">
+      <div class="roulette" id="roulette" aria-live="polite"></div>
+      <div id="birth-body" class="hidden">
+        <p class="small muted" id="birth-group"></p>
+        <h2 id="birth-title"></h2>
+        <p id="birth-intro"></p>
+        <p id="birth-cohort" class="small"></p>
+        <div class="odds" id="birth-odds"></div>
+        <p class="small muted" id="birth-region"></p>
+        <button id="btn-live" class="btn primary">生きてみる</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 一生 -->
+  <section id="screen-life" class="screen">
+    <header class="life-head">
+      <span id="life-emoji" class="life-emoji"></span>
+      <div>
+        <div id="life-name" class="life-name"></div>
+        <div id="life-age" class="life-age"></div>
+      </div>
+      <button id="btn-fast" class="btn tiny">はやおくり ▶▶</button>
+    </header>
+    <ol id="life-log" class="log"></ol>
+  </section>
+
+  <!-- 結果 -->
+  <section id="screen-result" class="screen">
+    <div class="card result">
+      <div id="res-emoji" class="res-emoji"></div>
+      <h2 id="res-title"></h2>
+      <p id="res-end" class="res-end"></p>
+      <div class="rank">
+        <p id="res-cohort"></p>
+        <p class="rank-big" id="res-rank"></p>
+        <p class="small muted" id="res-rank-note"></p>
+      </div>
+      <a id="btn-share" class="btn share" target="_blank" rel="noopener">Xでシェアする</a>
+      <button id="btn-again" class="btn primary">もう一度生まれる</button>
+      <button id="btn-res-sources" class="btn ghost">この生き物のデータを見る</button>
+    </div>
+    <!-- 広告枠(v0.1では空。公開時にここへ広告タグを入れる) -->
+    <div class="ad-slot" id="ad-result" aria-hidden="true"></div>
+  </section>
+
+  <!-- データの出典 -->
+  <section id="screen-sources" class="screen">
+    <div class="src-head">
+      <button id="btn-back" class="btn tiny">← もどる</button>
+      <h2>データの出典</h2>
+    </div>
+    <p class="small">生きのびる確率・寿命・卵や子の数は、下の資料の値か、資料の値から計算した値です。
+      「推定」は資料の数字から計算した値(例: 生存率=1−死亡率、数年分の値を1年あたりに直したもの、資料に幅があるときの幅の中央の値)です。
+      ゲーム中の出来事の文章(「タカに見つかった」など)は演出で、原因の割合は資料にもとづいていません。
+      調査地の違いや年ごとの変動があるため、実際の値には幅があります。</p>
+    <div id="src-list"></div>
+  </section>
+
+<p style="text-align:center;font-size:.85rem;margin:16px 0;opacity:.8">ほかのサイト → <a href="https://jomo-play.github.io/">jomo-play.github.io</a></p>
+</main>
+<script src="data/species.js"></script>
+<script src="js/game.js"></script>
+<script data-goatcounter="https://jomo-play.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
